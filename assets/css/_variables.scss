@@ -1,0 +1,45 @@
+:root {
+  --white: #fff;
+  --silver: #a5a5a5;
+  --lightSky: #f9faff;
+  --lightSky2: #f3f6fd;
+  --lightSky3: #e6edfb;
+  --blue: #044cd7;
+  --blueHover: #216af8;
+  --purple: #b11cc9;
+  --lightBlue: #e1e9fb;
+  --black: #000000;
+  --black2: #27292d;
+  --grey: #818182;
+  --grey2: #c2c2c5;
+  --greyDark: #9EA1A3;
+  --greyLight: #F4F4F4;
+  --white: #ffffff;
+  --borderColor: #e4e5ea;
+  --red: #f26969;
+  --red2: #fa3852;
+  --green: #69f28f;
+  --green2: #39e369;
+  --lightSilver: #f2f3f8;
+  --orange: #ff9300;
+
+  // White & Black Theme Color
+  --themeBlack: #27292d;
+  --themeWhite: #ffffff;
+  --themeWhite2: #ffffff;
+  --gradient: linear-gradient(to right, #044cd7, #b11cc9);
+
+    .At-Black {
+        --themeBlack: #ffffff;
+        --themeWhite: #27292d;
+        --themeWhite2: #333538;
+        --lightSky: #27292d;
+        --lightSky2: #27292d;
+        --borderColor: #3d3e42;
+        --lightSilver:#3d3e42;  
+        --grey: #ffffff;
+        --themebg: #090A20;
+    }
+    --At-Transition: all 0.3s ease-in-out;
+}
+ 

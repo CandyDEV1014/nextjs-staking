@@ -1,0 +1,6332 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "ProductSansMedium";
+  src: url("assets/fonts/ProductSans-Medium.eot");
+  src: url("assets/fonts/ProductSans-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ProductSans-Medium.woff2") format("woff2"), url("assets/fonts/ProductSans-Medium.woff") format("woff"), url("assets/fonts/ProductSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProductSansBold";
+  src: url("assets/fonts/ProductSans-Bold.eot");
+  src: url("assets/fonts/ProductSans-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ProductSans-Bold.woff2") format("woff2"), url("assets/fonts/ProductSans-Bold.woff") format("woff"), url("assets/fonts/ProductSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("assets/fonts/ProductSans-Regular.eot");
+  src: url("assets/fonts/ProductSans-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ProductSans-Regular.woff2") format("woff2"), url("assets/fonts/ProductSans-Regular.woff") format("woff"), url("assets/fonts/ProductSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white: #fff;
+  --silver: #a5a5a5;
+  --lightSky: #f9faff;
+  --lightSky2: #f3f6fd;
+  --lightSky3: #e6edfb;
+  --blue: #044cd7;
+  --blueHover: #216af8;
+  --purple: #b11cc9;
+  --lightBlue: #e1e9fb;
+  --black: #000000;
+  --black2: #27292d;
+  --grey: #818182;
+  --grey2: #c2c2c5;
+  --greyDark: #9EA1A3;
+  --greyLight: #F4F4F4;
+  --white: #ffffff;
+  --borderColor: #e4e5ea;
+  --red: #f26969;
+  --red2: #fa3852;
+  --green: #69f28f;
+  --green2: #39e369;
+  --lightSilver: #f2f3f8;
+  --orange: #ff9300;
+  --themeBlack: #27292d;
+  --themeWhite: #ffffff;
+  --themeWhite2: #ffffff;
+  --gradient: linear-gradient(to right, #044cd7, #b11cc9);
+  --At-Transition: all 0.3s ease-in-out;
+}
+
+:root .At-Black {
+  --themeBlack: #ffffff;
+  --themeWhite: #27292d;
+  --themeWhite2: #333538;
+  --lightSky: #27292d;
+  --lightSky2: #27292d;
+  --borderColor: #3d3e42;
+  --lightSilver:#3d3e42;
+  --grey: #ffffff;
+  --themebg: #090A20;
+}
+
+html,
+body,
+#root,
+.App,
+.At-Wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--themeBlack);
+}
+
+.At-Wrapper {
+  background: url(./assets/images/bg/banner-bg.png) no-repeat 0 0/100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.At-WrapperDao {
+  background: url(./assets/images/bg/banner-dao.png) no-repeat 0 0/cover;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--themebg) !important;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--themeBlack);
+  font: 400 14px/23px "Archivo", Arial, Helvetica, sans-serif;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-bottom: 0;
+  font-family: "Archivo", sans-serif;
+  color: var(--themeBlack);
+  line-height: 1.5;
+}
+
+body p {
+  line-height: 1.5;
+}
+
+body ul,
+body p {
+  margin-bottom: 0;
+}
+
+body figure {
+  margin: 0;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: 0 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  background: 0 0;
+  outline: 0 !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  border: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.At-DFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-DFlexACenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-FlexGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-FlexGridWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.At-FlexWrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.At-FlexJustify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-Width31 {
+  width: 31%;
+}
+
+.At-Width69 {
+  width: 69%;
+}
+
+.At-Width100 {
+  width: 100%;
+}
+
+.At-ColorBlack {
+  color: var(--themeBlack);
+}
+
+.At-ColorBlue {
+  color: var(--blue);
+}
+
+.At-ColorGrey {
+  color: var(--grey);
+}
+
+.At-ColorGradient, .At-RadioIcon input[type="radio"]:checked + label i {
+  background: -webkit-linear-gradient(#044cd7, #b11cc9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.At-ColorGradient::after, .At-RadioIcon input[type="radio"]:checked + label i::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  z-index: -1;
+  height: calc(100% - 22%);
+  width: calc(100% - 22%);
+  border-radius: 50%;
+}
+
+.At-SectionTitleHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.At-SectionTitleHolder .At-SectionTitle {
+  margin-right: 10px;
+}
+
+.At-SectionTitleHolder .At-TitleBtn {
+  margin-left: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-SectionTitleHolder a {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-SectionTitleMedium {
+  margin-right: 10px;
+  font-family: "Archivo", sans-serif;
+}
+
+.At-TitleFormRow {
+  margin-bottom: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-TitleBlueFont40 {
+  font-size: 2.5rem;
+  color: var(--blue);
+}
+
+.At-SectionTitleTwo {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.At-SectionTitleTwo .At-TitleBlueFont40 {
+  margin-top: 1rem;
+}
+
+.At-SecondaryTitle {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.At-PageTitle {
+  text-align: center;
+  margin: 0 auto 1.5rem;
+}
+
+.At-PageTitle h1 {
+  font-size: 2.5rem;
+}
+
+.At-PageTitle h2 {
+  font-size: 1.5rem;
+}
+
+.At-MaxW480 {
+  max-width: 45rem;
+}
+
+.At-SectionTitleTabs {
+  position: relative;
+  display: block;
+}
+
+.At-SectionTitleTabs .At-SectionTitle,
+.At-SectionTitleTabs .At-FilterBtn {
+  position: absolute;
+  top: 0;
+}
+
+.At-SectionTitleTabs .At-FilterBtn {
+  top: 0.5rem;
+}
+
+.At-FilterBtn {
+  cursor: pointer;
+  right: 0;
+  background: var(--themeWhite);
+  padding: 7px 9px 5px !important;
+  min-width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-FilterBtn i {
+  margin-right: 8px;
+}
+
+.At-FilterBtn i,
+.At-FilterBtn h6 {
+  color: var(--themeBlack);
+}
+
+.At-FilterBtn:hover {
+  background: var(--blue);
+}
+
+.At-FilterBtn:hover i,
+.At-FilterBtn:hover h6 {
+  color: var(--white);
+}
+
+.At-FilterBtn::marker {
+  display: none !important;
+  color: var(--white);
+  width: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 0;
+}
+
+.At-Btn {
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 13px;
+  font-family: "Archivo", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-Btn:hover {
+  background-color: var(--blueHover);
+}
+
+.At-BtnBorder {
+  width: 100%;
+  background: var(--lightSky);
+  padding: 1rem 1.5rem;
+  border-radius: 13px;
+  font-family: "Archivo", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  outline: none;
+  height: 3.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+}
+
+.At-BtnBorder:hover {
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  color: var(--white);
+}
+
+.At-BtnLightGrey {
+  color: var(--grey) !important;
+  background-color: var(--lightSky);
+}
+
+.At-BtnLightGrey:hover {
+  color: var(--grey) !important;
+  background-color: var(--lightSky);
+}
+
+.At-BtnLightBlue {
+  background-color: var(--lightSky3);
+  color: var(--blue);
+}
+
+.At-BtnLightBlue:hover {
+  color: var(--white);
+}
+
+.At-BtnWhite {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.At-BtnWhiteGrey {
+  background-color: var(--white);
+  color: var(--grey);
+}
+
+.At-BtnWhiteGrey:hover {
+  color: var(--white);
+}
+
+.At-BtnMedium {
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-family: "Archivo", sans-serif;
+}
+
+.At-BtnSmall {
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-BtnSubmit {
+  font-size: 14px;
+  border-radius: 13px;
+  padding: 10px 30px;
+}
+
+.At-BtnSection {
+  margin: 2.2rem auto;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  display: block;
+}
+
+.At-BtnBack {
+  background-color: transparent;
+  color: var(--blue);
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.At-Btn200 {
+  max-width: 12.5rem;
+  width: 100%;
+}
+
+.At-BtnFull {
+  width: 100%;
+}
+
+.At-BtnDarkMode {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: var(--themeBlack) !important;
+  color: var(--themeWhite) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-BtnDarkMode i {
+  margin-left: 0.65rem;
+}
+
+.At-BtnDarkMode:hover {
+  background-color: #555557 !important;
+  color: #fff !important;
+}
+
+.At-BtnDarkMode .At-LightText {
+  display: none;
+}
+
+.At-SectionGap {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.At-SectionGapBottom {
+  padding-bottom: 60px;
+}
+
+.At-SectionGap-B35 {
+  padding-bottom: 35px;
+}
+
+.At-FitFull-50 {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-FitFull-50 img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.At-FitFull {
+  position: relative;
+  overflow: hidden;
+}
+
+.At-FitFull img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.At-FitFullHeight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-FitFullHeight img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.At-Cursor {
+  cursor: pointer;
+}
+
+.At-CursorDefault {
+  cursor: default;
+}
+
+.ant-avatar-group .ant-avatar {
+  border: 2px solid var(--white);
+  line-height: 2;
+  font-size: 0.9rem;
+  font-family: "Archivo", sans-serif;
+}
+
+.ant-avatar {
+  height: 2rem;
+  width: 2rem;
+}
+
+.ant-popover-inner-content {
+  padding: 0.65rem 1rem;
+}
+
+.AtPollRight .At-BtnLike {
+  height: 4.4rem;
+  width: 4.4rem;
+  border: 2px solid var(--lightBlue);
+  background-color: var(--white);
+}
+
+.AtPollRight .At-BtnLike i {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+.AtPollRight .At-BtnLike:hover {
+  border-color: var(--green2) !important;
+}
+
+.AtPollRight .At-BtnLike:hover i {
+  color: var(--white);
+}
+
+.AtPollRight .At-Active {
+  border: 2px solid var(--green2);
+}
+
+.AtPollRight .At-Active i {
+  color: var(--white);
+}
+
+.AtPollRight .At-BtnDanger.At-Active {
+  border: 2px solid var(--red);
+}
+
+.AtPollRight .At-BtnDanger:hover {
+  border-color: var(--red) !important;
+}
+
+.AtPollRight .At-BtnDanger:hover i {
+  color: var(--white);
+}
+
+.At-BtnLike {
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.At-BtnLike:hover {
+  background-color: var(--green2);
+}
+
+.At-BtnLike.At-Active {
+  background-color: var(--green2);
+}
+
+.At-BtnDanger:hover {
+  background-color: var(--red2);
+}
+
+.At-BtnDanger.At-Active {
+  background-color: var(--red2);
+}
+
+.At-FormGroup {
+  margin-bottom: 1.5rem;
+}
+
+.At-BtnLogin {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.At-Checkbox {
+  display: block;
+  position: relative;
+  padding: 4px 0 0 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.At-Checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.At-Checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.At-Checkbox:hover input ~ .At-Checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.At-Checkbox input:checked ~ .At-Checkmark {
+  background-color: var(--white);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.At-Checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.At-Checkbox input:checked ~ .At-Checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.At-Checkbox .At-Checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid var(--blue);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.At-Label {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.At-HideScroller, .At-LoginLeft, .At-Sidebar100vh {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.At-HideScroller::-webkit-scrollbar, .At-LoginLeft::-webkit-scrollbar, .At-Sidebar100vh::-webkit-scrollbar {
+  display: none;
+}
+
+.At-Figure-hw-50px {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-ColW432 {
+  max-width: 27rem;
+}
+
+.At-TextEllipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.At-IconNext {
+  margin-left: 10px;
+}
+
+.At-IconBack {
+  margin-right: 10px;
+}
+
+.At-FRegular {
+  font-family: "Archivo", sans-serif;
+}
+
+.At-FBold {
+  font-family: "Archivo", sans-serif;
+}
+
+.At-FMedium {
+  font-family: "Archivo", sans-serif;
+}
+
+.At-px-15 {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+
+.At-g-15,
+.At-gx-15 {
+  --bs-gutter-x: 1.875rem;
+}
+
+.At-g-15,
+.At-gy-15 {
+  --bs-gutter-y: 1.875rem;
+}
+
+.At-Col-W20 {
+  width: 20%;
+}
+
+.At-AccordGreyArrow i {
+  color: var(--themeBlack);
+}
+
+.At-ClearAllBtn {
+  color: var(--blue);
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  font-family: "Archivo", sans-serif;
+  cursor: pointer;
+}
+
+.At-Link {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: "Archivo", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-LinkBlue {
+  color: var(--blue);
+}
+
+.At-LinkBlue:hover {
+  color: var(--blueHover);
+}
+
+.At-LinkBlueUnderLine {
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
+  padding-bottom: 0px;
+}
+
+.At-LinkBlueUnderLine:hover {
+  color: var(--blueHover);
+}
+
+.At-LinkGrey {
+  color: var(--grey);
+}
+
+.At-LinkGrey:hover {
+  color: var(--blue);
+}
+
+.At-Card {
+  background-color: var(--themeWhite2);
+  margin-bottom: 1.75rem;
+  position: relative;
+  border-radius: 13px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-Card .At-CardFigure {
+  height: 15rem;
+  border-radius: 13px 13px 0 0;
+  position: relative;
+}
+
+.At-Card .At-FigText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.At-Card .At-FigText .At-Bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(140.11deg, #044cd7 0%, #b11cc9 100%);
+  opacity: 0.4;
+}
+
+.At-Card .At-Text {
+  margin-top: 1.25rem;
+}
+
+.At-Card .At-Text p {
+  margin-bottom: 0.1rem;
+}
+
+.At-Card .At-Text,
+.At-Card .At-Text * {
+  color: var(--white);
+  position: relative;
+  z-index: 2;
+}
+
+.At-Card .At-CardFigure:hover .At-FigText {
+  opacity: 1;
+}
+
+.At-Card .At-CardBody {
+  padding: 1.25rem;
+}
+
+.At-Card .At-CardTitle {
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 5px;
+}
+
+.At-Card .At-CardGrey {
+  color: var(--grey);
+  margin-bottom: 5px;
+}
+
+.At-Card .At-ShareUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.At-Card .At-ShareUl li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.25rem;
+  cursor: pointer;
+}
+
+.At-Card .At-ShareUl li:first-child {
+  margin-left: 0;
+}
+
+.At-Card .At-ShareUl li i {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.At-Card .At-ShareUl li h6,
+.At-Card .At-ShareUl li i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: var(--themeBlack);
+}
+
+.At-Card .At-ShareUl li:hover h6,
+.At-Card .At-ShareUl li:hover i {
+  color: var(--blue);
+}
+
+.At-Card:hover {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.At-Card .At-ColorGradient, .At-Card .At-RadioIcon input[type="radio"]:checked + label i, .At-RadioIcon input[type="radio"]:checked + label .At-Card i {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+.At-Card .icon-verification {
+  display: none;
+  color: var(--white);
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  z-index: 2;
+}
+
+.At-Card .At-LabelCard {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 3;
+  cursor: default;
+}
+
+.At-Card .At-Star {
+  font-size: 1.375rem;
+  cursor: pointer;
+}
+
+.At-Card .icon-star-fill {
+  background: #044cd7;
+  background: -webkit-gradient(linear, left top, right top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to right, #044cd7 0%, #b11cc9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.At-Card .At-CardHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.At-Card .At-CardHeading .At-Btn {
+  margin-bottom: 2px;
+}
+
+.At-CardBoxShadow {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.At-CardBig .At-CardFigure {
+  height: 21.875rem;
+}
+
+.At-CardVerified .icon-verification {
+  display: block;
+}
+
+.At-AvatarBox {
+  position: relative;
+}
+
+.At-AvatarBoxInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ant-popover-inner {
+  border-radius: 13px;
+}
+
+.ant-popover-inner .ant-popover-inner-content {
+  padding: 0 !important;
+}
+
+.ant-popover-inner {
+  background-color: transparent;
+}
+
+.At-AvatarDetailBox {
+  bottom: 2.8rem;
+  background: var(--themeWhite);
+  border-radius: 13px;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  max-width: 13.75rem;
+  width: 100%;
+}
+
+.At-AvatarDetailBox .At-ImgTextBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.65rem;
+}
+
+.At-AvatarDetailBox .At-FitFull-50 {
+  width: 1.9rem;
+  height: 1.9rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 0.65rem;
+}
+
+.At-FeatureBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 13px;
+  background-color: var(--themeWhite2);
+}
+
+.At-FeatureBox .At-FitFull-50 {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-FeatureBox .At-FeatureText {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+}
+
+.At-FeatureBox .At-FeatureText h5 {
+  margin: 2px 0 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.At-FeatureBox .At-FeatureText p {
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+.At-FeatureBox .At-FeatureText .icon-check-fill {
+  font-size: 1.25rem;
+}
+
+.At-FeatureBox .At-FeatureText .At-DetailJoinsWrapper .At-DetailJoinButton {
+  padding: 0.6rem 0.1rem;
+  width: 8.3rem;
+  background-color: linear-gradient(to right, #044cd7, #b11cc9) !important;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-FeatureBox .At-FeatureText .At-DetailJoinsWrapper .At-DetailJoinButton p {
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.At-FeatureBox .At-FeatureText .At-DetailJoinsWrapper .At-DetailJoinButton:hover .text-black {
+  color: var(--white) !important;
+}
+
+.At-FeatureBox .At-FeatureText .At-DetailJoinsWrapper .bg-linear-gradient {
+  padding: 0.7rem 0.1rem;
+}
+
+.At-FeatureBox .At-FTextVerified {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-FeatureBox .At-FTextVerified .At-FTextLeft {
+  width: calc(100% - 2.3rem);
+  padding-right: 5px;
+}
+
+.At-FeatureBox .At-FTextRight {
+  margin-left: auto;
+}
+
+.At-GradientBorder {
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */
+  position: relative;
+}
+
+.At-GradientBorder:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: none;
+}
+
+.At-GradientBorder:hover {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.At-GradientBorder:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to right, #044cd7, #b11cc9);
+}
+
+.At-BtntGradientBorder {
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */
+  position: relative;
+  color: var(--themeBlack);
+  background-color: var(--lightSky) !important;
+}
+
+.At-BtntGradientBorder:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: -webkit-gradient(linear, left top, right top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to right, #044cd7, #b11cc9);
+}
+
+.At-BtntGradientBorder:hover {
+  background-color: transparent !important;
+  color: var(--white);
+}
+
+.At-FixedGradientBorder {
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */
+  position: relative;
+  color: var(--themeBlack) !important;
+  background-color: var(--themeWhite) !important;
+}
+
+.At-FixedGradientBorder:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: -webkit-gradient(linear, left top, right top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to right, #044cd7, #b11cc9);
+}
+
+.At-FeatureBoxInsideCard {
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.At-Header {
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  position: fixed;
+  padding: 15px 48px;
+  background: #14152b;
+}
+
+.At-Header .navbar .At-FormControl {
+  width: 18.1rem;
+}
+
+.At-Header .navbar .At-FormControl::-webkit-input-placeholder {
+  color: var(--grey) !important;
+}
+
+.At-Header .navbar .At-FormControl:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--grey) !important;
+}
+
+.At-Header .navbar .At-FormControl::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--grey) !important;
+}
+
+.At-Header .navbar .At-FormControl:-ms-input-placeholder {
+  color: var(--grey) !important;
+}
+
+.At-Header .At-HeaderSearch {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-Header .At-Logo {
+  float: left;
+}
+
+.At-Header .At-Logo a,
+.At-Header .At-Logo img {
+  display: block;
+}
+
+.At-Header .At-Logo img {
+  width: 100%;
+  height: auto;
+}
+
+.At-FormGroupIcon {
+  position: relative;
+}
+
+.At-FormGroupIcon .At-FormControl {
+  padding-right: 3rem;
+}
+
+.At-FormGroupIcon i {
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--themeBlack);
+  line-height: 2.75rem;
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+}
+
+.At-FormGroupIcon .At-ChatContainerInput {
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--themeBlack);
+  line-height: 2.75rem;
+  position: absolute;
+  text-align: center;
+}
+
+.At-FormGroupIcon .At-ChatContainerInput .At-Btn:hover {
+  background: transparent;
+}
+
+.At-FormGroupIcon .At-ChatContainerInput .icon-emoji {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.navbar-nav a {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  color: var(--grey) !important;
+  position: relative;
+}
+
+.navbar-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  bottom: -0.5rem;
+  width: 2.2rem;
+  height: 3px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.navbar-nav a:hover {
+  color: var(--themeBlack) !important;
+}
+
+.navbar-nav a.active {
+  color: var(--themeBlack) !important;
+}
+
+.navbar-nav a.active::after {
+  background-color: var(--themeBlack);
+}
+
+.At-NavCreateUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
+
+.At-NavCreateUl a {
+  background: var(--lightBlue);
+  color: var(--blue);
+  padding: 1.3rem 1rem;
+  min-width: 8rem;
+  display: block;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  border-radius: 13px 0 0 13px;
+}
+
+.At-NavCreateUl a:hover {
+  background: var(--blue);
+  color: var(--lightBlue);
+}
+
+.At-NavCreateUl li {
+  margin-right: 2px;
+}
+
+.At-NavCreateUl li:last-child {
+  margin-right: 0;
+}
+
+.At-NavCreateUl li:nth-child(2) a {
+  border-radius: 0 13px 13px 0;
+}
+
+.At-Black .At-NavCreateUl a {
+  background: var(--themeWhite2);
+  color: var(--white);
+}
+
+.At-NavLoginUl li:first-child a {
+  background: var(--themeBlack);
+  color: var(--themeWhite);
+}
+
+.At-NavLoginUl li:first-child a:hover {
+  background: var(--blue);
+  color: var(--lightBlue);
+}
+
+.At-NavLoginUl li:last-child a {
+  background: var(--blue);
+  color: var(--lightBlue);
+}
+
+.At-NavLoginUl li:last-child a:hover {
+  background: var(--blueHover);
+}
+
+.At-SectionFooter {
+  border-bottom: 1px solid var(--borderColor);
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.At-SectionFooter .At-FooterPara {
+  font-size: 1rem;
+  color: var(--grey);
+  margin: 2rem 0 1.4rem;
+}
+
+.At-SectionFooter .At-SocialUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-SectionFooter .At-SocialUl li a {
+  font-size: 1.25rem;
+  color: var(--grey);
+  margin-right: 1.5rem;
+}
+
+.At-SectionFooter .At-SocialUl li a:hover {
+  color: var(--blue);
+}
+
+.At-SectionFooter .At-SocialUl li:last-child {
+  margin-right: 0;
+}
+
+.At-SectionFooter .At-FooterLinks li a {
+  font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+  color: var(--grey);
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.At-SectionFooter .At-FooterLinks li a:hover {
+  color: var(--blue);
+}
+
+.At-SectionFooter .At-FooterLinks li:first-child a {
+  margin-top: 0;
+}
+
+.At-SectionFooter .At-FooterHeading {
+  margin-bottom: 3rem;
+}
+
+.At-SectionFooter .At-FooterLogo {
+  max-width: 10rem;
+}
+
+.At-Copyright {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.At-Copyright p {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.At-Copyright .At-CopyrightUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-Copyright .At-CopyrightUl li {
+  margin-left: 1.25rem;
+  max-width: 5rem;
+}
+
+.At-Copyright .At-CopyrightUl li:first-child {
+  margin-left: 0;
+}
+
+.At-Copyright .At-BlackCopyrightLogos {
+  display: none;
+}
+
+.At-Black .At-CopyrightUl {
+  display: none;
+}
+
+.At-Black .At-BlackCopyrightLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-CommunityWrapper .At-TabBtnWrap .ant-tabs-nav {
+  width: calc(100% - 7rem) !important;
+}
+
+.At-TabBtnWrap .ant-tabs-nav {
+  width: calc(100% - 14.5rem);
+  margin: 0.4rem auto 33px;
+  padding: 0 15px;
+}
+
+.At-TabBtnWrap .ant-tabs-nav::before {
+  border: none !important;
+}
+
+.At-TabBtnWrap .ant-tabs-nav-list {
+  margin: 0 auto;
+}
+
+.At-TabBtnWrap .ant-tabs-nav-wrap::after, .At-TabBtnWrap .ant-tabs-nav-wrap::before {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.At-TabBtnWrap .ant-tabs-tab {
+  padding: 0 !important;
+  border: none !important;
+  background: var(--themeWhite) !important;
+  margin: 0 0 0 0.65rem !important;
+  border-radius: 13px !important;
+}
+
+.At-TabBtnWrap .ant-tabs-tab .ant-tabs-tab-btn {
+  border-radius: 13px !important;
+}
+
+.At-TabBtnWrap .ant-tabs-tab-active .At-BtnTab {
+  background: var(--blue) !important;
+  color: var(--white);
+}
+
+.At-TabBtnWrap .ant-tabs-ink-bar {
+  display: none;
+}
+
+.At-TabBtnWrapDiscover .ant-tabs {
+  overflow: visible;
+}
+
+.ant-tabs-dropdown-menu {
+  background-color: var(--themeWhite);
+  border-radius: 8px;
+}
+
+.At-BtnTab {
+  background: var(--themeWhite) !important;
+  color: var(--themeBlack);
+  padding: 5px 1rem;
+  text-align: center;
+}
+
+.At-BtnTab:hover {
+  background: var(--blue) !important;
+  color: var(--white);
+}
+
+/* Discove Page css */
+.At-FigureBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 13px;
+  margin: 0;
+  position: relative;
+}
+
+.At-FigureBox img {
+  display: block;
+}
+
+.At-FigureBox .At-FitFull-50 {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 1rem;
+}
+
+.At-FigureBox .At-FigureText {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.At-SwiperWrap {
+  position: relative;
+}
+
+.At-SwiperWrap .At-BtnSwiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -4rem;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  background-color: var(--themeWhite2);
+  color: var(--themeBlack);
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  border: 1px solid var(--themeWhite2);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 9;
+}
+
+.At-SwiperWrap .At-BtnSwiper:hover {
+  background-color: var(--blueHover);
+  border-color: var(--blueHover);
+  color: var(--white);
+}
+
+.At-SwiperWrap .At-BtnSwiperNext {
+  left: inherit;
+  right: -4rem;
+}
+
+.At-SwiperWrapDiscover {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  background-color: var(--themeWhite);
+  border-radius: 13px 13px 13px 13px;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.At-SwiperWrapDiscover .At-BtnSwiperPrev {
+  left: -8rem;
+}
+
+.At-SwiperWrapDiscover .At-BtnSwiperNext {
+  right: -8rem;
+}
+
+.At-SectionSwiperOverlay {
+  overflow: hidden;
+}
+
+.At-SectionSwiperOverlay .swiper-container {
+  overflow: visible;
+}
+
+.At-SectionSwiperOverlay .swiper-slide {
+  opacity: 0.3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-SectionSwiperOverlay .swiper-slide-active {
+  opacity: 1;
+}
+
+.At-DiscoverBox .At-DiscoverBoxTop {
+  border-radius: 13px 13px 0 0;
+  padding: 1.5rem 1.9rem;
+  background-color: var(--themeWhite2);
+}
+
+.At-DiscoverBox .At-DiscoverTitle {
+  margin: 0 0 1rem;
+}
+
+.At-DiscoverBox .At-TextBox {
+  margin-bottom: 1.5rem;
+}
+
+.At-DiscoverBox .At-TextBox h5 {
+  margin-bottom: 4px;
+}
+
+.At-DiscoverBox .At-TextBoxTwo {
+  margin-bottom: 1.5rem;
+}
+
+.At-DiscoverBox .At-TextBoxTwo p {
+  margin-bottom: 4px;
+}
+
+.At-DiscoverBox .At-BidTitle {
+  margin: 1.5rem 0 1rem;
+}
+
+.At-DiscoverBox .At-DiscoverBoxBottom {
+  background-color: var(--themeWhite2);
+  border-radius: 0 0 13px 13px;
+  padding: 1.4rem 2rem 3rem;
+}
+
+.At-DiscoverBoxMiddle {
+  position: relative;
+}
+
+.At-DiscoverBoxMiddle .At-Figure {
+  height: 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.At-DiscoverBoxMiddle .At-Figure img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.At-DiscoverBoxMiddle .At-FigureBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}
+
+.At-DiscoverBoxMiddle .At-FigText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  width: 100%;
+  max-height: 30rem;
+  max-width: 26rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.At-DiscoverBoxMiddle .At-FigText .At-Bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(140.11deg, #044cd7 0%, #b11cc9 100%);
+  opacity: 0.4;
+}
+
+.At-DiscoverBoxMiddle .At-FigText .icon-check-fill {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.At-DiscoverBoxMiddle .At-Text {
+  margin-top: 1.25rem;
+}
+
+.At-DiscoverBoxMiddle .At-Text p {
+  margin-bottom: 0.1rem;
+}
+
+.At-DiscoverBoxMiddle .At-Text,
+.At-DiscoverBoxMiddle .At-Text * {
+  color: var(--white);
+  position: relative;
+  z-index: 2;
+}
+
+.At-DiscoverBoxMiddle .At-Figure:hover .At-FigText {
+  opacity: 1;
+}
+
+.At-LikeBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-LikeBtns li {
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-LikeBtns li h5 {
+  margin-left: 5px;
+  font-family: "Archivo", sans-serif;
+}
+
+.At-LikeBtns li:first-child {
+  margin-left: 0;
+}
+
+/* Discove Page css ends */
+/* Login css */
+.At-LoginWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+.At-LoginLogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  padding: 2.3rem 0 0 6.5rem;
+  width: 40%;
+  background-color: var(--lightSky);
+}
+
+.At-LoginLeft {
+  width: 40%;
+  overflow-y: auto;
+  padding: 0 15px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.At-LoginLeft .At-BtnBorder {
+  margin-top: 1.5rem;
+}
+
+.At-LoginLeft .At-BtnBorder,
+.At-LoginLeft .At-Btn {
+  font-size: 1.125rem;
+}
+
+.At-LoginRight {
+  width: 60%;
+  background: url(assets/images/bg/login-bg.jpg) no-repeat 0 0/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.At-LoginRight figure {
+  max-width: 40rem;
+}
+
+.At-LoginRight .At-LoginRightInner {
+  padding-top: 5rem;
+}
+
+.At-LoginRight .At-LoginRightInner h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-LoginRight .At-LoginRightInner h1 img {
+  margin-left: 10px;
+}
+
+.At-SignupRight figure {
+  max-width: 51rem;
+}
+
+.At-LoginLeftInner {
+  max-width: 38rem;
+  width: 100%;
+  height: 100%;
+  padding: 6rem 0 3rem 6.5rem;
+  display: table;
+}
+
+.At-LoginHolder {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.At-Remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-LoginSecondTitle {
+  color: var(--grey);
+  font-family: "Archivo", sans-serif;
+  margin: 1rem 0 1.5rem;
+}
+
+.ant-message .ant-message-notice-content {
+  border-radius: 13px;
+}
+
+.At-BtnSocialLogins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.At-BtnSocialLogins .At-BtnSocialLogin {
+  height: 4.375rem;
+  width: 4.375rem;
+  margin-right: 15px;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--themeWhite2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-BtnSocialLogins .At-BtnSocialLogin:hover {
+  background-color: var(--lightSilver);
+}
+
+.At-BtnSocialLogins .At-BtnSocialLogin i {
+  font-size: 2rem;
+}
+
+.At-BtnSocialLogins .At-BtnSocialLogin i.icon-twitch {
+  color: var(--purple);
+}
+
+/* Login css ends */
+/* Feed Page css  */
+.At-SidbarCardHolder .At-Card,
+.At-SidbarCardHolder .At-FeatureBox {
+  margin-bottom: 8px;
+}
+
+.At-Sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 15px;
+}
+
+.At-Sidebar100vh {
+  height: 95vh;
+  overflow-y: auto;
+}
+
+.At-SidebarBox {
+  margin-bottom: 2rem;
+}
+
+.At-AddPost {
+  border-radius: 13px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  padding: 0 0 1rem;
+  margin-top: 15px;
+  background-color: var(--themeWhite2);
+}
+
+.At-AddPost .At-PostBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-AddPost .At-PostBtns li {
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.At-AddPost .At-PostBtns li * {
+  color: var(--grey);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-AddPost .At-PostBtns li i {
+  font-size: 1.25rem;
+  margin-right: 8px;
+}
+
+.At-AddPost .At-PostBtns li:hover * {
+  color: var(--themeBlack);
+}
+
+.At-FromGroupWithImg {
+  position: relative;
+}
+
+.At-FromGroupWithImg .At-FitFull-50 {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.At-FromGroupWithImg .At-FormControlText {
+  padding-top: 2rem;
+  padding: 2rem 0 2rem 7rem;
+  font-size: 1.5rem;
+  font-family: "Archivo", sans-serif;
+  color: var(--grey2);
+  display: block;
+}
+
+.At-FromGroupWithImg .At-FormControl {
+  font-size: 1.5rem !important;
+  padding-left: 7rem;
+  padding-top: 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.At-FromGroupWithImg .At-FormControl::-webkit-input-placeholder {
+  color: var(--grey2) !important;
+}
+
+.At-FromGroupWithImg .At-FormControl:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--grey2) !important;
+}
+
+.At-FromGroupWithImg .At-FormControl::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--grey2) !important;
+}
+
+.At-FromGroupWithImg .At-FormControl:-ms-input-placeholder {
+  color: var(--grey2) !important;
+}
+
+.At-FromGroupWithImg.At-FromGroupLiveFeed {
+  margin-bottom: 1rem;
+}
+
+/* Feed Page css ends */
+/* Dao Page css */
+.At-DaoBox {
+  text-align: center;
+  padding: 12% 0 10%;
+}
+
+.At-DaoBox h1 {
+  font-size: 3.375rem;
+  margin: 10px 0 5px;
+}
+
+.At-DaoBox h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Dao Page css ends */
+/* Black theme css */
+.At-Black .At-SectionTitleTabs .At-TitleBtn.ant-dropdown-trigger {
+  background: transparent !important;
+}
+
+.At-Black .At-BtnDarkMode .At-LightText {
+  display: block;
+}
+
+.At-Black .At-BtnDarkMode .At-DarkText {
+  display: none;
+}
+
+.At-SectionDarkTheme {
+  position: fixed;
+  bottom: 3rem;
+  right: 5.1%;
+  z-index: 22;
+}
+
+/* Black theme css ends */
+.At-AntTabs .ant-tabs {
+  overflow: visible;
+}
+
+/* Global Page css */
+.At-DatePicker {
+  position: relative;
+  margin-bottom: 1.125rem;
+}
+
+.At-DatePicker .ant-picker {
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  border-radius: 8px;
+  background-color: var(--themeWhite2);
+  border-color: var(--borderColor);
+}
+
+.At-DatePicker .ant-picker-input input {
+  text-align: right;
+  padding-right: 1.7rem;
+}
+
+.At-DatePicker .At-DatePlaceholder {
+  position: absolute;
+  z-index: 2;
+  left: 1rem;
+  top: 0.85rem;
+  pointer-events: none;
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.At-DatePicker .ant-picker-suffix::after {
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+  content: "\e922";
+  font-family: icomoon;
+  font-size: 1.12rem;
+  color: var(--grey);
+}
+
+.At-DatePicker .ant-picker-suffix .anticon {
+  display: none;
+}
+
+.At-RadioGradient {
+  margin-top: 0.7rem;
+}
+
+.At-RadioGradient input[type="radio"] {
+  display: none;
+}
+
+.At-RadioGradient input[type="radio"] + label {
+  border: 1px solid var(--borderColor);
+  height: 7rem;
+  width: 8.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 13px;
+  padding: 0 0 0 0px;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+  position: relative;
+}
+
+.At-RadioGradient input[type="radio"]:checked + label {
+  background: var(--themeWhite2);
+  border: 1px solid var(--purple);
+}
+
+.At-RadioIcon input[type="radio"] + label i {
+  font-size: 5.625rem;
+  color: var(--grey);
+}
+
+.At-RadioImg input[type="radio"] + label {
+  width: 6.75rem;
+  height: 5.5rem;
+}
+
+.At-RadioImg img {
+  height: 3.75rem;
+  width: 3.75rem;
+}
+
+.At-RadioSkin input[type="radio"] + label {
+  height: 3.125rem;
+  width: 3.8rem;
+}
+
+.At-RadioSkin .At-RadioCircle {
+  background: #fad2b9;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.At-RadioSkin .At-RadioCircle2 {
+  background: #ffe397;
+}
+
+.At-RadioSkin .At-RadioCircle3 {
+  background: #ffc19a;
+}
+
+.At-RadioSkin .At-RadioCircle4 {
+  background: #e59168;
+}
+
+.At-RadioSkin .At-RadioCircle5 {
+  background: #a25a2c;
+}
+
+.At-Input {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  background: var(--themeWhite2);
+  border: none;
+  outline: none;
+}
+
+.At-SelectHolder {
+  position: relative;
+}
+
+.At-SelectHolder::after {
+  top: 0.8rem;
+  right: 15px;
+  z-index: 2;
+  display: block;
+  font-size: 12px;
+  content: "\e906";
+  font-family: "icomoon";
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+  color: #696d73;
+}
+
+.At-Select {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  color: #fff;
+  background: var(--themeWhite2);
+  border: none;
+  outline: none;
+}
+
+.AtPagetitleInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.AtPagetitleInput h2 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 50%;
+}
+
+.AtPagetitleInput .At-Input,
+.AtPagetitleInput .At-SelectHolder {
+  width: 50%;
+}
+
+/* Global Page css ends */
+/* create collectible */
+.create-collectible .At-SelectCollection {
+  height: 100%;
+  border: 2px solid #dadada;
+  border-radius: 26px;
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.create-collectible .At-SelectCollection > h1 {
+  padding: 10rem 0;
+}
+
+.create-collectible .ant-upload {
+  padding: 0 !important;
+  border-radius: var(--borderRadius) !important;
+  background-color: var(--lightSky) !important;
+  border: none !important;
+}
+
+.create-collectible .ant-tabs-nav-wrap {
+  background-color: var(--lightSky) !important;
+}
+
+.create-collectible .ant-tabs-nav-wrap .ant-tabs-nav-list {
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--themeBlack) !important;
+  padding: 3px 0px;
+}
+
+.create-collectible .ant-tabs-tab {
+  border: none !important;
+  background-color: var(--themeWhite) !important;
+  width: 31%;
+  height: 11.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: var(--borderRadius) !important;
+  font-size: 1rem !important;
+  color: var(--themeBlack) !important;
+  -webkit-transition: 0.3s all !important;
+  transition: 0.3s all !important;
+  border-radius: 13px !important;
+  font-family: "Archivo", sans-serif;
+}
+
+.create-collectible i {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.create-collectible .At-MultiCollTabs .ant-tabs-tab {
+  width: 48.5% !important;
+  background-color: var(--themeWhite);
+}
+
+.create-collectible .ant-tabs-nav-wrap .ant-tabs-tab-active {
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent !important;
+  /* !importanté */
+  position: relative;
+  color: var(--black);
+  background-color: var(--themeWhite2) !important;
+}
+
+.create-collectible .ant-tabs-nav-wrap .ant-tabs-tab-active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: -webkit-gradient(linear, left top, right top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to right, #044cd7, #b11cc9);
+}
+
+.create-collectible .ant-tabs-nav-wrap .ant-tabs-tab-active h5 {
+  color: var(--themeBlack) !important;
+}
+
+.create-collectible .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--themeBlack);
+}
+
+.At-SmallUploadParent {
+  height: 210px;
+}
+
+.At-SmallUploadParent .ant-upload {
+  background-color: transparent !important;
+}
+
+.At-SmallUploadParent .icon-upload {
+  font-size: 3.75rem;
+  color: #044cd7;
+}
+
+.ant-upload {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.ant-upload-list-item {
+  border-radius: 13px !important;
+}
+
+.At-UploadParent {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.create-collectible .At-UploadParent {
+  height: 15.625rem;
+}
+
+.At-UploadParent i {
+  font-size: 3.75rem;
+  color: #044cd7;
+}
+
+.create-collectible .ant-upload {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.At-EditProfile {
+  border: 10px solid var(--white);
+}
+
+.At-CreateCollectibleParent {
+  height: 280px;
+}
+
+.At-Btn420 {
+  width: 26.25rem !important;
+}
+
+.At-ChooseCollectionItem {
+  width: 16.25rem;
+  height: 11.25rem;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--themeWhite2);
+}
+
+.At-ChooseCollectionItem .icon-artify {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+  color: var(--white);
+  padding-top: 5px;
+  margin-bottom: 7px;
+}
+
+.At-ChooseCollectionItem .icon-add {
+  color: var(--blue);
+}
+
+.At-ChooseCollectionItem p {
+  color: var(--themeBlack);
+}
+
+.At-ChooseCollectionItem:nth-child(2) {
+  background-color: var(--themeWhite2) !important;
+}
+
+.At-ProfileTop {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-ProfileTop .At-ProfileIdWrapper {
+  width: 24.688rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.125rem;
+}
+
+.At-ProfileTop .At-ProfileIdWrapper .At-ProfileId {
+  width: 22.688rem;
+  height: 29px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-ProfileTop .At-ProfileIdWrapper i {
+  font-size: 20px;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.At-ProfileTop .At-ProfileText {
+  margin-top: 24px;
+}
+
+.At-ProfileTop .At-ProfieFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.At-ProfileTop .At-ProfieFields button {
+  margin-left: 2px;
+}
+
+.At-ProfileAvatar {
+  width: 11.25rem;
+  min-width: 11.25rem;
+  height: 11.25rem;
+  border-radius: 50%;
+  border: 10px solid var(--white);
+}
+
+.At-ProfileAvatar .At-ProfileAvatarImg {
+  width: 100%;
+  height: 100%;
+}
+
+.At-EditProfileBtn {
+  width: 15rem;
+  background: var(--blue);
+}
+
+.At-ProfileTopRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.At-ProfileTopRight .At-ProfileIcons {
+  width: 3.75rem;
+  height: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 13px;
+  margin-left: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.At-ProfileBottom {
+  margin-top: 4.125rem;
+  border-top: 1px solid var(--borderColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-ProfileBottom .At-ProfileTabsWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-ProfileTabsWrapper .ant-tabs {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.At-ProfileTabsWrapper .ant-tabs-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-ProfileTabsWrapper .ant-tabs-nav-list {
+  margin: 0 auto;
+}
+
+.At-ProfileTabsWrapper .At-ProfileTabName {
+  font-size: 16px;
+  font-family: "Archivo", sans-serif;
+  color: var(--grey);
+}
+
+.At-ProfileTabsWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active .At-ProfileTabName {
+  color: var(--themeBlack) !important;
+}
+
+.At-ProfileTabsWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active {
+  -webkit-box-shadow: inset 0px 3px 0px 0px var(--blue) !important;
+          box-shadow: inset 0px 3px 0px 0px var(--blue) !important;
+}
+
+.At-ProfileTabsWrapper .ant-tabs-nav-wrap {
+  -webkit-box-shadow: 0px 0px 0.1px !important;
+          box-shadow: 0px 0px 0.1px !important;
+}
+
+.At-ProfileTabsWrapper .ant-tabs-tab {
+  border: none !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+}
+
+.ant-tabs-nav::before {
+  border: none !important;
+}
+
+.At-MenuFirstItemDisable .ant-dropdown-menu-item:first-child {
+  background: none !important;
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.At-Menu {
+  background-color: var(--themeWhite);
+  border-radius: 13px;
+  padding: 10px;
+  width: 13.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-Menu .ant-dropdown-menu-item {
+  color: var(--themeBlack);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  -webkit-transition: all 0 ease;
+  transition: all 0 ease;
+}
+
+.At-Menu .ant-dropdown-menu-item:hover {
+  color: var(--black2);
+}
+
+.At-DropDownMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+}
+
+.At-DropDownMenu p {
+  font-family: "Archivo", sans-serif;
+}
+
+.At-DropDownMenu i {
+  width: 14px;
+}
+
+.At-ShareMenu .ant-dropdown-menu-item:first-child {
+  background: none !important;
+  cursor: default;
+}
+
+.At-ShareMenu p {
+  margin-left: 20px;
+}
+
+.At-ShareTopLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-ShareTopLink .At-Link {
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.At-CenterParent {
+  margin: 0 auto;
+}
+
+.create-collectible .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  padding: 5rem 0;
+}
+
+.common-select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.common-select .ant-select-selector {
+  background: var(--themeWhite2) !important;
+  padding: 1.85rem 1.5rem !important;
+}
+
+.common-select .At-HandleSelectArrow {
+  position: absolute;
+  right: 20px;
+  color: var(--grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none !important;
+}
+
+.common-select .At-HandleSelectArrow i {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.common-select .At-HandleSelectArrow h4 {
+  color: var(--grey);
+  margin: auto 10px auto 0px;
+}
+
+.At-ArtDetailImg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-ArtDetailImg > img {
+  max-height: 100%;
+}
+
+.At-ShareUlArtDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.563rem;
+}
+
+.At-ShareUlArtDetail li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.25rem;
+  cursor: pointer;
+}
+
+.At-ShareUlArtDetail li:first-child {
+  margin-left: 0;
+}
+
+.At-ShareUlArtDetail li i {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.At-ShareUlArtDetail li h5,
+.At-ShareUlArtDetail li h6,
+.At-ShareUlArtDetail li i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-ShareUlArtDetail li:hover h5,
+.At-ShareUlArtDetail li:hover h6,
+.At-ShareUlArtDetail li:hover i {
+  color: var(--blue);
+}
+
+.At-RightSideMessageWrapper .ant-tabs-nav {
+  border-top: none !important;
+  border-bottom: 1px solid var(--lightSilver);
+}
+
+.At-ArtDetailsTabsWrapper .ant-tabs-nav,
+.At-ChangeAvatarTabsWrapper .ant-tabs-nav,
+.At-RightSideMessageWrapper .ant-tabs-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid var(--lightSilver);
+}
+
+.At-ArtDetailsTabsWrapper .At-ProfileTabName,
+.At-ChangeAvatarTabsWrapper .At-ProfileTabName,
+.At-RightSideMessageWrapper .At-ProfileTabName {
+  font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+  color: var(--grey);
+}
+
+.At-ArtDetailsTabsWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active .At-ProfileTabName,
+.At-ChangeAvatarTabsWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active .At-ProfileTabName,
+.At-RightSideMessageWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active .At-ProfileTabName {
+  color: var(--themeBlack) !important;
+}
+
+.At-ArtDetailsTabsWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active,
+.At-ChangeAvatarTabsWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active,
+.At-RightSideMessageWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active {
+  -webkit-box-shadow: inset 0px 3px 0px 0px var(--blue) !important;
+          box-shadow: inset 0px 3px 0px 0px var(--blue) !important;
+}
+
+.At-ArtDetailsTabsWrapper .ant-tabs-nav-wrap,
+.At-ChangeAvatarTabsWrapper .ant-tabs-nav-wrap,
+.At-RightSideMessageWrapper .ant-tabs-nav-wrap {
+  -webkit-box-shadow: 0px 0px 0.1px !important;
+          box-shadow: 0px 0px 0.1px !important;
+}
+
+.At-ArtDetailsTabsWrapper .ant-tabs-tab,
+.At-ChangeAvatarTabsWrapper .ant-tabs-tab,
+.At-RightSideMessageWrapper .ant-tabs-tab {
+  border: none !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+}
+
+.At-ArtDetailsTabsWrapper .ant-tabs-tab:nth-child(2),
+.At-ChangeAvatarTabsWrapper .ant-tabs-tab:nth-child(2),
+.At-RightSideMessageWrapper .ant-tabs-tab:nth-child(2) {
+  margin-left: 2rem !important;
+}
+
+.ant-drawer-content-wrapper {
+  width: 25rem;
+}
+
+.At-ChatListSideBar {
+  width: 20rem;
+}
+
+.At-MessageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.At-MessageContainer .At-ChatContainer {
+  width: 100%;
+  background-color: var(--themeWhite2);
+  height: 52.188rem;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList-none {
+  border-right: 1px solid var(--lightSilver);
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList {
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList ::-webkit-scrollbar {
+  display: none;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-FormControl {
+  border: 1px solid var(--lightSilver);
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllChatUsers {
+  max-height: 41.625rem;
+  overflow-y: scroll;
+  margin-top: 1.188rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-ChatSettings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-ChatSettings .At-ChatSettingsProfileImg {
+  width: 4.875rem;
+  height: 4.875rem;
+  border-radius: 50%;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllSettings {
+  border-top: 1px solid var(--lightSilver);
+  margin-top: 2.1rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllSettings .At-AllSetting {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllSettings .At-AllSetting i {
+  font-size: 1.4rem;
+  color: var(--grey);
+  padding-right: 1rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllSettings .At-AllSetting:nth-child(1):before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 2.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to bottom, #044cd7, #b11cc9);
+  z-index: 3;
+  left: 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllSettings .At-AllNotifications {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatList .At-AllSettings .At-AllNotifications p {
+  color: var(--grey);
+  padding-left: 1rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer {
+  width: calc(100% - 25.125rem);
+  height: 100%;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer ::-webkit-scrollbar {
+  display: none;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatUser {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 2rem;
+  border-bottom: 1px solid var(--lightSilver);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatUser .At-ChatItem {
+  padding: 0;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer {
+  height: calc(100% - 10.125rem);
+  width: 100%;
+  overflow-y: scroll;
+  padding: 1rem 2rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessageParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessageParent .At-SingleMessage {
+  border-radius: 10px 10px 10px 0;
+  background-color: var(--lightSilver);
+  color: var(--grey);
+  text-align: left;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessageParent .At-SingleMessage span {
+  color: var(--grey);
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessageParent .At-FitFull-50 {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessageParent .At-FitFull-50 > img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessage {
+  min-width: 45px;
+  margin-top: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 53%;
+  padding: 8px 13px;
+  border-radius: 10px 10px 0 10px;
+  background-color: var(--blue);
+  color: white;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessage p {
+  font-size: 1rem;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  white-space: pre-line;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessage .At-SingleMessageTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessage .At-SingleMessageTime h6 {
+  margin-right: 5px;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-SingleMessage .At-SingleMessageTime span {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatMessagesContainer .At-RightMsg {
+  margin-left: auto;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput {
+  height: 5.625rem;
+  padding: 0.938rem 2rem;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-FormControl {
+  border: 1px solid var(--lightSilver);
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-ChatContainerInput {
+  width: 10.6rem;
+  background-color: var(--themeWhite2);
+  margin-right: 16px;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-ChatContainerInput .At-ChatContainerInputInner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-ChatContainerInput .At-ChatContainerInputInner .At-ChatInputIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  height: 70%;
+  border-right: 1px solid var(--silver);
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-ChatContainerInput .At-ChatContainerInputInner .At-ChatInputIcons i {
+  position: relative !important;
+  color: var(--silver);
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-ChatContainerInput .At-ChatContainerInputInner .At-ChatInputIcons .icon-gif-parent {
+  border: 2px solid var(--silver);
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-ChatContainerInput .At-ChatContainerInputInner .At-ChatInputIcons .icon-gif-parent h6 {
+  font-size: 0.6rem;
+  color: var(--silver);
+}
+
+.At-MessageContainer .At-ChatContainer .At-ChatMessageContainer .At-ChatBottomInput .At-LinkBlue {
+  font-size: 1rem;
+  padding-left: 1.6rem;
+}
+
+.At-MessageContainer .At-RightMessageBarDrawer .ant-drawer-body {
+  padding: 0;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper {
+  width: 33%;
+  max-width: 25.5rem;
+  min-height: 52.188rem;
+  padding-left: 1.875rem;
+  display: none;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper ::-webkit-scrollbar {
+  display: none;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner {
+  width: 100%;
+  min-height: 52.188rem;
+  overflow-y: scroll;
+  border-radius: 12px;
+  background-color: var(--themeWhite2);
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageTop {
+  height: 4.5rem;
+  border-bottom: 1px solid var(--lightSilver);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.875rem;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody {
+  padding: 1.563rem 1.2rem;
+  border-bottom: 1px solid var(--lightSilver);
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideProfileImage {
+  width: 9.3rem;
+  height: 9.3rem;
+  margin: auto;
+  position: relative;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideProfileImage .At-RightSideProfileImage-Camera {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to bottom, #044cd7, #b11cc9);
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideGroupName {
+  margin-top: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-EditGroupDescWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-EditGroupDescWrapper .At-ProfileId {
+  width: 90%;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideMessageSingleGroupUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideMessageSingleGroupUser .At-RightSideMessageUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideMessageSingleGroupUser .At-RightSideMessageUser .At-RightSideMessageUserAvatar {
+  width: 38px;
+  height: 38px;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideMessageAdminBtn {
+  padding: 0.2rem 0.5rem;
+  background: var(--white);
+  border-radius: 5px;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSideMessageBody .At-RightSideMessageAdminBtn p {
+  font-size: 12px;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSearchBarWrapper {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 1.8rem;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSearchBarWrapper .At-RightSearchBar {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--lightSilver);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSearchBarWrapper .At-RightSearchBar i {
+  font-size: 18px;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-RightSideMessageInner .At-RightSearchBarWrapper .At-RightSearchBar input {
+  width: calc(100% - 18px);
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .ant-tabs-nav-wrap .ant-tabs-tab-active {
+  -webkit-box-shadow: inset 0px -3px 0px 0px var(--blue) !important;
+          box-shadow: inset 0px -3px 0px 0px var(--blue) !important;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-SingleMediaImage {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.2rem;
+}
+
+.At-MessageContainer .At-RightSideMessageWrapper .At-SingleMediaImage img {
+  width: 108px;
+}
+
+.At-MessageContainer .At-GreyBox {
+  background-color: var(--greyLight);
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.At-MessageContainer .At-GreyBox .At-ShareLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--themeWhite2);
+}
+
+.At-MessageContainer .At-GreyBox .At-ShareLink .At-LinkIcon {
+  height: 3.5rem;
+  width: 3.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--greyDark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.At-MessageContainer .At-GreyBox .At-ShareLink .At-LinkText {
+  margin-left: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.At-MessageContainer .At-GreyBox .At-ShareLink .At-LinkText p {
+  color: var(--grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 1.5rem);
+}
+
+.At-MessageContainer .At-GreyBox .At-ShareLink .At-LinkText h6 {
+  color: var(--themeBlack);
+  font-family: "Archivo", sans-serif;
+}
+
+.At-MessageContainer .At-GreyBox .At-GreyBoxTitle {
+  margin-bottom: 0.65rem;
+}
+
+.At-MessageContainer .At-GreyBox .At-Link {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  margin-top: 0.65rem;
+  display: block;
+}
+
+.At-MessageContainer .At-GreyBox .At-YoutubePlay {
+  position: relative;
+  height: 13rem;
+  overflow: hidden;
+  border-radius: 13px 13px 0 0;
+  cursor: pointer;
+}
+
+.At-MessageContainer .At-GreyBox .At-YoutubePlay .At-IconPlayHolder {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.At-MessageContainer .At-GreyBox .At-YoutubePlay .At-IconPlayHolder .icon-play {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.At-MessageContainer .At-GreyBox .At-YoutubePlay:hover .At-IconPlayHolder {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.At-MessageContainer .At-GreyBox .At-YoutubeHeading {
+  color: var(--blue);
+  margin-top: 1rem;
+  font-family: "Archivo", sans-serif;
+}
+
+.At-ChatItem:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 3.125rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to bottom, #044cd7, #b11cc9);
+  z-index: 3;
+  left: 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.At-ChatItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 8px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.At-ChatItem .At-FitFull-50 {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-ChatItem .At-FeatureText {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.At-ChatItem .At-FeatureText .At-UserName {
+  margin-bottom: 5px;
+}
+
+.At-ChatItem .At-FeatureText .At-LastMsg {
+  color: var(--grey);
+  max-width: 11rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.At-ChatItem .At-ChatFeatures {
+  width: 92px;
+}
+
+.At-ChatItem .At-ChatFeatures .At-ChatFeaturesInner {
+  color: var(--silver);
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-ChatItem .At-ChatFeatures .At-ChatFeaturesInner .icon-down-arrow {
+  font-size: 14px;
+}
+
+.At-ChatItem .At-ChatFeatures .At-ChatMessageCount {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.At-ChatItem .At-LastMsgTime {
+  color: var(--grey);
+  text-align: right;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.At-ChatItem .At-ChatUserDropdown {
+  margin-left: 5px;
+}
+
+.At-ChatSideBarIcon {
+  position: absolute;
+  left: 10px;
+  top: 10%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+  color: var(--grey);
+}
+
+.At-ProfilePopup .ant-modal-content {
+  border-radius: 13px !important;
+  max-width: 28.125rem;
+  max-height: 40.125rem;
+  margin: 0 auto;
+  overflow-y: auto;
+  background: var(--themeWhite);
+}
+
+.At-ProfilePopup .ant-modal-content .ant-modal-header {
+  height: 4.438rem;
+  border-radius: 13px 13px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--themeWhite);
+}
+
+.At-ProfilePopup .ant-modal-content .At-ArtPopupBodyItem {
+  max-width: 25.625rem;
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-ProfilePopup .ant-modal-content .At-ArtPopupBodyItem .At-FitFull-50 {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.At-PopUp .ant-modal-content {
+  padding: 1rem 0.5rem;
+  border-radius: 13px;
+}
+
+.At-AddPostPopup .ant-modal-content,
+.At-AddPostPopup .ant-modal-body {
+  padding: 0;
+}
+
+.At-AddPostPopup .At-AddPost {
+  padding: 0;
+}
+
+.At-AddPostPopup .At-PostUploader {
+  padding: 0 1.5rem 2rem;
+}
+
+.At-AddPostPopup .At-PostUploader .At-UploadParent {
+  padding: 1.2rem 2rem 2rem;
+}
+
+.At-AddPostPopup .At-AddPostBottom {
+  padding: 0 0 1.5rem;
+}
+
+.At-AddPostPopup .At-PostBtnsWrapper .At-PostBtnsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-AddPostPopup .At-PostBtnsWrapper .At-BtnMedium {
+  margin-left: auto;
+}
+
+.At-LoginPopup .ant-modal-content .At-LoginSignupPopup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.At-LoginPopup .ant-modal-content .At-LoginSignupPopup .At-LoginSignupText {
+  font-size: 16px;
+  color: var(--grey);
+  text-align: center;
+}
+
+.At-PlaceBidPopupMain .ant-modal-content {
+  border-radius: 13px;
+  background: var(--themeWhite);
+}
+
+.At-PlaceBidPopupMain .ant-modal-content .ant-modal-header {
+  border-radius: 13px 13px 0 0;
+  background: var(--themeWhite);
+}
+
+.At-PlaceBidPopupMain .ant-modal-content .At-PlaceBidPopup .At-PlaceBidText {
+  color: var(--grey);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-PlaceBidPopupMain .ant-modal-content .At-PlaceBidPopup .At-PlaceBidForm p {
+  font-size: 16px;
+}
+
+.At-PlaceBidPopupMain .ant-modal-content .At-PlaceBidPopup .At-PlaceBidForm .At-FormControl {
+  border: 1px solid var(--lightSilver);
+}
+
+.At-ChangeAvatarMain .ant-modal-content {
+  border-radius: 13px;
+  background: transparent;
+}
+
+.At-ChangeAvatarMain .ant-modal-content .ant-modal-header {
+  border-radius: 13px 13px 0 0;
+  text-align: center;
+  padding: 24px 0px;
+  background: var(--themeWhite);
+}
+
+.At-ChangeAvatarMain .ant-modal-content .ant-modal-body {
+  padding: 0px 24px 1rem;
+  background: var(--themeWhite);
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.At-ChangeAvatarMain .ant-modal-content .At-ChangeAvatarTabsWrapper {
+  width: 100%;
+}
+
+.At-AvatarStoreMain p {
+  font-size: 0.95rem;
+  color: var(--grey);
+}
+
+.At-AvatarStoreMain ::-webkit-scrollbar {
+  display: none;
+}
+
+.At-AvatarStoreMain .At-AvatarStore {
+  width: 100%;
+  margin-top: 16px;
+  height: 15rem;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.At-AvatarStoreMain .At-AvatarStore .At-SingleAvatar {
+  position: relative;
+  width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.At-AvatarStoreMain .At-AvatarStore .At-SingleAvatar .At-Checkbox {
+  position: absolute;
+  top: 40%;
+}
+
+.At-AvatarStoreMain .At-AvatarStore .At-SingleAvatar .At-Checkmark {
+  border: 2px solid transparent !important;
+}
+
+.At-AvatarStoreMain .At-AvatarStore .At-SingleAvatar .At-Checkbox input:checked ~ .At-Checkmark {
+  background-color: white;
+}
+
+.At-AvatarStoreMain .At-AvatarStore .At-Avatar6 {
+  width: calc(100% / 6);
+}
+
+.At-AvatarStoreMain .At-TextAvatar {
+  color: var(--white);
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.At-SingleFeed {
+  border-radius: 13px;
+  background: var(--themeWhite);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.At-SingleFeed .At-FeedHeader {
+  padding: 1.5rem 1.87rem;
+}
+
+.At-SingleFeed .At-SingleFeedDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.At-SingleFeed .At-SingleFeedDesc p {
+  font-size: 15px;
+}
+
+.At-SingleFeed .At-SingleFeedDesc * {
+  color: var(--themeBlack);
+}
+
+.At-SingleFeed .At-ShareUlArtDetail > li {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.At-SingleFeed .At-ShareUlArtDetail > li i {
+  font-size: 23px;
+}
+
+.At-SingleFeed .At-ShareUlArtDetail > li * {
+  color: var(--themeBlack);
+}
+
+.At-SingleFeed .At-DiscoverBoxMiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.At-SingleFeed .At-DiscoverBoxMiddle .At-Figure {
+  height: 20rem;
+  position: relative;
+}
+
+.At-SingleFeed .At-DiscoverBoxMiddle .At-Figure .At-FigText,
+.At-SingleFeed .At-DiscoverBoxMiddle .At-Figure .At-FigText2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.At-SingleFeed .At-DiscoverBoxMiddle .At-MiddleIcon {
+  position: absolute;
+  z-index: 9;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 26px;
+  background-color: var(--blue);
+  color: white;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 2.5rem);
+  font-size: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-SingleFeed .At-DiscoverBoxMiddle .At-MiddleIcon:hover {
+  background-color: var(--blueHover);
+}
+
+.At-HeaderProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.At-HeaderProfile .At-HeaderNotification {
+  padding: 0px 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+}
+
+.At-HeaderProfile .At-HeaderNotification i {
+  cursor: pointer;
+}
+
+.At-HeaderProfile .At-ChatUser {
+  width: 16.25rem;
+}
+
+.At-ProfileMenu .At-DropDownMenu {
+  margin: 2px 4px;
+}
+
+.At-FeedTabWrapper {
+  width: 100%;
+  padding: 0;
+}
+
+.At-DropsCalendarWrapper {
+  border-radius: 13px;
+}
+
+.ant-picker-calendar {
+  padding: 5px;
+  border-radius: 13px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to right, #044cd7, #b11cc9);
+  border-radius: 50%;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner::before,
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner::before {
+  border: none !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:before {
+  border: none;
+}
+
+.ant-drawer-content {
+  background: var(--themeWhite);
+}
+
+.At-ViewsIcon {
+  position: absolute;
+  height: 20px;
+  padding: 0.8rem 0.5rem;
+  background-color: var(--blue);
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.At-ViewsIcon p {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.At-CreateGroupInviteBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10rem;
+  padding: 0.7rem 1rem;
+  border-radius: 13px;
+  background: var(--themeWhite);
+}
+
+.At-CreateGroupInviteBtn i {
+  padding-bottom: 0;
+  font-size: 1.6rem;
+  padding: 0.2rem;
+}
+
+.At-EditProfileWrapper .At-ProfileIdWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-EditProfileWrapper .At-ProfileIdWrapper .At-ProfileId {
+  width: 93%;
+}
+
+.At-EditProfileWrapper .At-ProfileIdWrapper i {
+  font-size: 2rem;
+  color: var(--silver);
+}
+
+.At-AvatarTabWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.At-SectionBuyTicket {
+  background-position: center;
+  background: url(./assets/images/bg/joy.png) no-repeat 0 0/100%;
+  background-position: center;
+  height: auto;
+  min-height: 100%;
+}
+
+.At-HeaderProfileDropdown {
+  width: 260px;
+}
+
+.At-HeaderProfileDropdown .At-LightButton {
+  height: 3.1rem;
+  font-size: 0.9rem;
+}
+
+.At-HeaderProfileDropdown .At-HeaderBalanceDrop {
+  height: 4.4rem;
+  background: var(--blue);
+  color: var(--white);
+  width: 100%;
+  border-radius: 13px;
+}
+
+.At-HeaderProfileDropdown .At-HeaderBalanceDrop h3 {
+  color: var(--white);
+}
+
+.At-HeaderProfileDropdown .At-HeaderProfileDropdownInner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5px;
+}
+
+.At-HeaderProfileDropdown .At-HeaderProfileDropdownInner div:nth-child(1) {
+  width: 45%;
+  color: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-HeaderProfileDropdown .At-HeaderProfileDropdownInner div:nth-child(1) i {
+  margin-left: 0.5rem;
+  font-size: 9px;
+}
+
+.At-HeaderProfileDropdown .At-HeaderProfileDropdownInner div:nth-child(2) {
+  width: 55%;
+  color: var(--grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2px;
+}
+
+.At-MarketPlaceAddvertisement {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: var(--white);
+  position: relative;
+}
+
+.At-MarketPlaceAddvertisement img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.At-MarketPlaceAddvertisement .At-AddvertisementText {
+  position: absolute;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.At-CommunityAdminAddvr {
+  height: 7.3rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--themeWhite);
+  border-radius: 13px;
+}
+
+.At-CommunityAdminAddvr img {
+  width: 70%;
+}
+
+.At-ConnectWalletPopup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.At-ConnectWalletPopup p {
+  font-size: 1rem;
+}
+
+.At-ConnectWalletPopup .At-MetaMask {
+  width: 100%;
+  border-radius: 13px;
+  background: -webkit-gradient(linear, left top, right top, from(#ee5a36), to(#fcda4b));
+  background: linear-gradient(to right, #ee5a36, #fcda4b);
+  padding: 0.7rem 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+  color: white;
+  cursor: pointer;
+}
+
+.At-ConnectWalletPopup .At-LightButton {
+  height: 3.1rem;
+}
+
+.At-NumberInput::-webkit-outer-spin-button,
+.At-NumberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.At-NStakingWrapper {
+  width: 90%;
+  background: -webkit-gradient(linear, right top, left top, from(#044cd7), to(#b11cc9));
+  background: linear-gradient(to left, #044cd7 0%, #b11cc9 100%);
+  padding: 2rem 1.5rem;
+  border-radius: 40px;
+  padding-bottom: 10rem;
+}
+
+.At-NStakingWrapper * {
+  color: var(--white);
+}
+
+.At-NStakingWrapper .At-NStackDetail > div {
+  border-radius: 10px !important;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper {
+  border: 1px solid white;
+  height: 100%;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(255, 255, 255, 0.336);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper input {
+  width: 60%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper ::-webkit-input-placeholder {
+  color: white !important;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper :-ms-input-placeholder {
+  color: white !important;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper ::-ms-input-placeholder {
+  color: white !important;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper ::placeholder {
+  color: white !important;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakInputWrapper div {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.8rem;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper button {
+  padding: 0rem 1.3rem;
+  background: #e7e6e6;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakBottomButtons {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakBottomButtons button {
+  width: 130px;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStakBottomButtons button:nth-child(2) {
+  margin-left: 10px;
+}
+
+.At-NStakingWrapper .At-NStackTabsWrapper .At-NStackStats .w-100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.At-ContractSection {
+  margin-top: 8rem;
+}
+
+.At-ContractSection h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.At-ContractSection p {
+  margin-bottom: 1rem;
+}
+
+.At-ContractSection ul li {
+  margin-bottom: 1rem;
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.At-Header {
+  width: 100%;
+  float: left;
+}
+
+.At-AddNavigation {
+  float: right;
+}
+
+.At-AddNavigation nav {
+  width: 100%;
+  float: left;
+}
+
+.At-AddNavigation nav .At-TotalLtf {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 16px;
+  font-weight: 600;
+  line-height: 50px;
+  min-width: 160px;
+  margin: 0 24px 0 0;
+  background: #21223b;
+  border-radius: 10px;
+  border: 1px solid #383957;
+}
+
+.At-AddNavigation nav .At-TotalLfg img {
+  width: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.At-AddNavigation nav .At-btnconnectmetamask {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 16px;
+  font-weight: 500;
+  line-height: 50px;
+  margin: 0 24px 0 0;
+  background: #21223b;
+  border-radius: 10px;
+  border: 1px solid #383957;
+}
+
+.At-AddNavigation nav .At-btnconnectmetamask figure {
+  margin: 0 8px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.At-AddNavigation nav .At-btnconnectmetamask figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.At-AddNavigation nav .At-btnconnectmetamask figure span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.At-AddNavigation nav .At-Btntotalbalance {
+  float: left;
+  line-height: 68px;
+  padding: 0 12px;
+  margin: 0 24px 0 0;
+}
+
+.At-AddNavigation nav .At-Profiledropdown {
+  float: left;
+}
+
+.At-AddNavigation nav .At-Profiledropdown button {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 16px;
+  font-weight: 500;
+  line-height: 50px;
+  background: #21223b;
+  border-radius: 10px;
+  border: 1px solid #383957;
+}
+
+.At-AddNavigation nav .At-Profiledropdown button figure {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.At-AddNavigation nav .At-Profiledropdown button figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.At-AddNavigation nav .At-Profiledropdown button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.At-AddNavigation nav .At-Profiledropdown .dropdown-menu {
+  width: 100%;
+  padding: 12px 8px;
+  border-radius: 10px;
+  background: #14152b;
+  border: 1px solid #20213a;
+}
+
+.At-AddNavigation nav .At-Profiledropdown .dropdown-menu .dropdown-item {
+  color: #fff;
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.At-AddNavigation nav .At-Profiledropdown .dropdown-menu .dropdown-item:hover {
+  background: #20213a;
+}
+
+.At-sidebarwrapper {
+  left: 0;
+  top: 83px;
+  width: 266px;
+  position: fixed;
+  background: #14152b;
+  height: calc(100vh - 83px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.At-sidebarwrapper .At-sidebar {
+  width: 100%;
+  float: left;
+  padding: 14px;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea {
+  width: 100%;
+  float: left;
+  margin: 0 0 26px;
+  border-radius: 5px;
+  border: 1px solid #272740;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-Url {
+  width: 100%;
+  float: left;
+  padding: 12px;
+  border-radius: 5px;
+  background: #1c1d39;
+  border: 1px solid #272740;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-Url span {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-Url .At-btncopyurl {
+  padding: 0;
+  float: right;
+  cursor: pointer;
+  background: none;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-Url .At-btncopyurl img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-sidebarltf {
+  width: 100%;
+  float: left;
+  padding: 14px 24px;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-sidebarltf figure {
+  float: left;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-sidebarltf figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.At-sidebarwrapper .At-sidebar .At-copyurlarea .At-sidebarltf span {
+  color: #fff;
+  float: right;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.At-sidebarwrapper .AtSidebarFooter {
+  background-color: #252641;
+  border-radius: 5px;
+  padding: 1rem 10px;
+  margin: auto 14px 14px;
+}
+
+.At-sidebarwrapper .AtSidebarFooter .AtSidebarImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-sidebarwrapper .AtSidebarFooter .AtSidebarImg figure {
+  margin-right: 1rem;
+}
+
+.At-sidebarwrapper .AtSidebarFooter .AtSidebarImg img {
+  display: block;
+  max-width: 20px;
+}
+
+.At-sidebarwrapper .AtSidebarSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.At-sidebarwrapper .AtSidebarSocial li {
+  margin-left: 1rem;
+}
+
+.At-sidebarwrapper .AtSidebarSocial li:first-child {
+  margin-left: 0;
+}
+
+.At-sidebarwrapper .AtSidebarFooterInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.AtPagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.5rem auto;
+  max-width: 400px;
+}
+
+.AtPagination .At-Btn {
+  background-color: var(--blue);
+  max-width: 120px;
+  width: 100%;
+}
+
+.AtPagination .At-BtnLightGrey {
+  background-color: var(--grey);
+  color: var(--black) !important;
+}
+
+.At-navigation {
+  width: 100%;
+  float: left;
+}
+
+.At-navigation .At-Nav {
+  width: 100%;
+  float: left;
+}
+
+.At-navigation .At-Nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+
+.At-navigation .At-Nav ul li {
+  width: 100%;
+  float: left;
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+.At-navigation .At-Nav ul li:first-child {
+  padding: 0 0 8px;
+}
+
+.At-navigation .At-Nav ul li:last-child {
+  padding: 8px 0 0;
+}
+
+.At-navigation .At-Nav ul li.At-Active a {
+  color: #fff;
+}
+
+.At-navigation .At-Nav ul li a {
+  width: 100%;
+  float: left;
+  background: #252641;
+  border-radius: 5px;
+  padding: 0 8px;
+  color: #909295;
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.At-tounlock {
+  width: 100%;
+  float: left;
+  padding: 20px;
+}
+
+.At-tounlock p {
+  margin: 0 0 12px;
+  color: #909295;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.At-tounlock span {
+  float: left;
+  color: #fff;
+  padding: 0 22px;
+  font-size: 20px;
+  line-height: 42px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #2f93ff;
+}
+
+.At-btncliam {
+  border-radius: 28px;
+  border: 1px solid #2f93ff;
+  background: none;
+}
+
+.At-claimbtnholder {
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+
+.At-claimbtnholder .At-Btn {
+  float: left;
+  color: #fff;
+  padding: 0 10px;
+  font-weight: 500;
+  line-height: 54px;
+  font-size: 16px;
+  text-align: center;
+  min-width: 130px;
+  border-radius: 30px;
+  background: #004cff;
+  background: -webkit-gradient(linear, left top, right top, from(#004cff), to(#7db9e8));
+  background: linear-gradient(to right, #004cff 0%, #7db9e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004cff', endColorstr='#7db9e8',GradientType=1 );
+}
+
+.At-claimbtnholder .At-Btn + .At-Btn {
+  float: right;
+  background: #ff00d5;
+  background: linear-gradient(135deg, #ff00d5 0%, #9e0cdb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00d5', endColorstr='#9e0cdb',GradientType=1 );
+}
+
+.At-Assetpageholder {
+  width: 100%;
+  float: left;
+  padding: 110px 34px 0 300px;
+}
+
+.At-Pagetitle {
+  width: 100%;
+  float: left;
+  padding: 0 0 30px;
+}
+
+.At-Pagetitle h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.At-assetcardgrid {
+  clear: both;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 45px;
+  overflow: hidden;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.At-Card {
+  width: 100%;
+  float: left;
+  padding: 12px;
+  border-radius: 10px;
+  background: #14152b;
+  border: 1px solid #20213a;
+}
+
+.At-Card .At-cardnumberartea {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  margin: 0 0 12px;
+  border-radius: 5px;
+  background: #14152b;
+  border: 1px solid #20213a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.At-Card .At-cardnumberartea em {
+  color: #2f93ff;
+  font-weight: 600;
+  font-style: normal;
+  width: 15%;
+}
+
+.At-Card .At-cardnumberartea .At-FCard {
+  width: 57%;
+  border: 1px solid #20213a;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.At-Card .At-cardnumberartea .At-FCard input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.At-Card .At-cardnumberartea .At-FCard button {
+  position: absolute;
+  right: 5px;
+  background: var(--blue);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+.At-Card .At-cardnumberartea span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 600;
+  padding: 0 8px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  background: #970dff;
+  text-align: center;
+  width: 40%;
+}
+
+.At-Card .At-CardImage {
+  width: 100%;
+  float: left;
+  margin: 0 0 12px;
+}
+
+.At-Card .At-CardImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.At-Card .At-Carddetail {
+  width: 100%;
+  float: left;
+}
+
+.At-Card .At-Carddetail h3 {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 8px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.At-Card .At-Carddetail span {
+  display: block;
+  color: #7f8fa5;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.At-Card .At-Carddetail h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.At-Btnback {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  line-height: 54px;
+  font-weight: 500;
+  padding: 0 46px;
+  border-radius: 30px;
+  background: #191a34;
+  border: 1px solid #272740;
+}
+
+.At-Btnback img,
+.At-Btnback span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.At-Btnback span {
+  padding: 0 0 0 6px;
+}
+
+.At-Aboutusholder {
+  width: 100%;
+  float: left;
+}
+
+.At-Aboutcardarea {
+  width: 450px;
+  float: left;
+}
+
+.At-Aboutcontent {
+  float: left;
+  padding: 18px 30px;
+  border-radius: 10px;
+  background: #14152b;
+  width: calc(100% - 480px);
+  border: 1px solid #20213a;
+  cursor: pointer;
+}
+
+.At-Aboutcontent h3 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder {
+  width: 100%;
+  float: left;
+  padding: 0 0 40px;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea {
+  width: 400px;
+  float: left;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea span {
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  display: block;
+  padding: 0 0 12px;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea .At-ColorBlue {
+  color: var(--blue);
+  display: inline-block;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea .At-rangleslide {
+  width: 100%;
+  float: left;
+  height: 16px;
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea .At-rangleslide .At-rangetop {
+  width: 50%;
+  float: left;
+  height: 100%;
+  background: #2f93ff;
+  border-radius: 8px;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea .At-rangleslide span {
+  position: absolute;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea ul {
+  margin: 0;
+  width: 100%;
+  float: left;
+  padding: 8px 0 0;
+  list-style: none;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea ul li {
+  float: left;
+  list-style-type: none;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea ul li + li {
+  float: right;
+}
+
+.At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea ul li span {
+  display: block;
+  color: #2f93ff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.At-Aboutcontent .At-ownerinfo {
+  width: 100%;
+  float: left;
+}
+
+.At-Aboutcontent .At-ownerinfo h4 {
+  color: #7f8fa5;
+  font-size: 20px;
+  margin: 0 0 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.At-Aboutcontent .At-ownerinfo .At-ownerdetail {
+  width: 100%;
+  float: left;
+  padding: 24px;
+  border-radius: 5px;
+  background: #191a34;
+  border: 1px solid #272740;
+}
+
+.At-Aboutcontent .At-ownerinfo .At-ownerdetail h5 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 20px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.At-Aboutcontent .At-ownerinfo .At-ownerdetail span {
+  color: #2f93ff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.AtInfoBox {
+  float: left;
+  padding: 18px 30px;
+  border-radius: 10px;
+  background: #14152b;
+  width: calc(100% - 480px);
+  border: 1px solid #20213a;
+}
+
+.At-SortDown {
+  padding-right: 0;
+  position: relative;
+}
+
+.sort-by {
+  padding-right: 18px;
+  position: relative;
+}
+
+.sort-by:before,
+.At-SortDown:after {
+  border: 4px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  right: 2px;
+  top: 50%;
+  position: absolute;
+  width: 0;
+}
+
+.sort-by {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sort-by::before {
+  border-bottom-color: #cfcfcf;
+  margin-top: -10px;
+}
+
+.sort-by:hover:before {
+  border-bottom-color: #6c6f75;
+}
+
+.At-SortDown {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.At-SortDown::after {
+  border-top-color: #cfcfcf;
+  margin-top: 1px;
+}
+
+.At-SortDown:hover:after {
+  border-top-color: #6c6f75;
+}
+
+.rt-btnsidebartoggle {
+  width: 24px;
+  height: 24px;
+  left: 12px;
+  top: 12px;
+  padding: 0;
+  display: none;
+  position: absolute;
+  background: none;
+}
+
+.rt-btnsidebartoggle img {
+  height: 100%;
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+/*========================================================
+================== RESPONSIVE QUERIES===============*/
+/*------------------------------------------------
+1920
+------------------------------------------------*/
+@media (max-width: 1920px) {
+  .At-SwiperWrapHomepage .swiper-container {
+    overflow: visible;
+  }
+  .At-BannerTop {
+    overflow-x: hidden;
+  }
+}
+
+/*------------------------------------------------
+1760
+------------------------------------------------*/
+@media (min-width: 1760px) {
+  .At-Container {
+    max-width: 1710px;
+  }
+}
+
+/*------------------------------------------------
+1759
+------------------------------------------------*/
+@media screen and (max-width: 1760px) {
+  html {
+    font-size: 85%;
+  }
+  h6 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .At-Header .navbar .At-FormControl {
+    width: 14.1rem;
+  }
+  .At-FormGroupIcon i {
+    right: 0.2rem;
+  }
+  .At-Card .At-BtnSmall {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
+  .At-SectionFooter .At-FooterInput .At-Btn {
+    right: 0.4rem;
+    top: 0.32rem;
+  }
+  .At-TabBtnWrap .ant-tabs-nav {
+    margin: 0.1rem auto 33px;
+  }
+  .At-ChatInputIcons i {
+    margin-bottom: 12px !important;
+  }
+}
+
+/*------------------------------------------------
+1601
+------------------------------------------------*/
+@media (max-width: 1601px) {
+  .rt-tableholder {
+    overflow: auto !important;
+    width: 100% !important;
+    float: left !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: none !important;
+            flex: none !important;
+  }
+  .rt-tableholder table {
+    width: 100% !important;
+    min-width: 1199px !important;
+    overflow: auto !important;
+  }
+}
+
+/*------------------------------------------------
+1500
+------------------------------------------------*/
+@media screen and (max-width: 1500px) {
+  .At-SwiperWrap .At-BtnSwiperNext {
+    right: -1rem;
+  }
+  .At-SwiperWrap .At-BtnSwiperPrev {
+    left: -1rem;
+  }
+}
+
+/*------------------------------------------------
+1600
+------------------------------------------------*/
+@media screen and (min-width: 1401px) {
+  .At-Col20 {
+    width: 20%;
+  }
+  .At-ProfileTop {
+    max-width: 90rem;
+  }
+  .At-Container1275 {
+    max-width: 1275px;
+  }
+}
+
+/*------------------------------------------------
+1400
+------------------------------------------------*/
+@media screen and (max-width: 1400px) {
+  .create-collectible .At-SelectCollection > h1 {
+    padding: 6rem 0;
+  }
+  .At-xxl-DisplayNone {
+    display: none;
+  }
+  .At-NavCreateUl a {
+    padding: 1rem 0.5rem;
+    min-width: 6rem;
+    font-size: 12px;
+  }
+  .navbar-nav a {
+    font-size: 12px;
+  }
+  .At-Header .navbar .At-FormControl {
+    padding: 0.9rem 1rem;
+  }
+  .At-FormGroupIcon i {
+    top: 0.4rem;
+  }
+  .At-LoginLeftInner {
+    padding: 6rem 0 6rem 2rem;
+  }
+  .At-LoginLogo {
+    padding-left: 2rem;
+  }
+  .At-HeaderProfile .At-ChatUser {
+    width: 12.25rem;
+  }
+  .At-ChatItem .At-FitFull-50 {
+    height: 2.125rem;
+    width: 2.125rem;
+    margin-right: 0.6rem;
+  }
+  .At-HeaderProfile .At-HeaderNotification {
+    padding: 0px 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .At-CenterParent {
+    width: 940px;
+    padding: 0 3rem;
+  }
+  .At-CreateCollectibleParent {
+    height: 480px;
+  }
+  .At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea {
+    width: 100%;
+  }
+}
+
+/*------------------------------------------------
+1200
+------------------------------------------------*/
+@media (min-width: 1200px) {
+  .At-TextOverly {
+    width: 34.375rem;
+    line-height: 24px;
+  }
+  .At-Container-1130 {
+    max-width: 1130px;
+  }
+  .At-SwiperWrapDiscover {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+  .At-Container1020 {
+    max-width: 1020px;
+  }
+}
+
+/*------------------------------------------------
+1199
+------------------------------------------------*/
+@media (max-width: 1199px) {
+  .At-Card .At-CardBody {
+    padding: 0.95rem;
+  }
+  .At-Header .At-ChatUserWrapper,
+  .At-HeaderProfile {
+    width: 3rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .At-Header .At-ChatUserWrapper a,
+  .At-HeaderProfile a {
+    display: none;
+  }
+  .At-Header .At-ChatUserWrapper .At-FeatureText,
+  .At-HeaderProfile .At-FeatureText {
+    display: none;
+  }
+  .At-Header .At-ChatUserWrapper .At-HeaderNotification,
+  .At-HeaderProfile .At-HeaderNotification {
+    display: none;
+  }
+  .At-Header .At-ChatUserWrapper .At-ChatUserDropdown,
+  .At-HeaderProfile .At-ChatUserDropdown {
+    margin: auto;
+  }
+  .At-Header .At-Logo {
+    max-width: 8rem;
+    padding: 9px 0;
+  }
+  .At-sidebarwrapper {
+    top: 72px;
+    width: 236px;
+    height: calc(100vh - 72px);
+  }
+  .At-sidebarwrapper .AtSidebarSocial li {
+    margin-left: 0.5rem;
+  }
+  .At-sidebarwrapper .AtSidebarSocial li:first-child {
+    margin-left: 0;
+  }
+  .m-l80 {
+    margin-left: 3.125rem;
+  }
+  .At-LoginLogo {
+    padding-left: 15px;
+  }
+  .At-LoginLeftInner {
+    padding: 6rem 0 6rem 15px;
+  }
+  .AtPollRight .At-BtnLike {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+  .AtPollRight .At-BtnLike i {
+    font-size: 1.25rem;
+  }
+  .At-px-15 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .At-g-15,
+  .At-gx-15 {
+    --bs-gutter-x: 10px;
+  }
+  .At-g-15,
+  .At-gy-15 {
+    --bs-gutter-y: 10px;
+  }
+  .At-AddNavigation nav .At-TotalLtf,
+  .At-AddNavigation nav .At-btnconnectmetamask,
+  .At-AddNavigation nav .At-Profiledropdown button {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .At-AddNavigation nav .At-Profiledropdown button figure {
+    width: 30px;
+    height: 30px;
+  }
+  .At-AddNavigation nav .At-btnconnectmetamask figure {
+    width: 30px;
+  }
+}
+
+/*------------------------------------------------
+1059
+------------------------------------------------*/
+@media screen and (max-width: 991px) {
+  .rt-btnsidebartoggle {
+    display: block;
+  }
+  .At-sidebarwrapper {
+    top: 106px;
+    left: -100%;
+    z-index: 1;
+    height: calc(100vh - 106px);
+  }
+  .At-sidebarwrapper.rt-showsidebar {
+    left: 0;
+  }
+  .At-Assetpageholder {
+    padding: 120px 20px 0 20px;
+  }
+  .At-Header .At-Logo {
+    float: none;
+    padding: 0;
+    width: 108px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+  }
+  .At-AddNavigation {
+    width: 100%;
+  }
+  .At-AddNavigation nav {
+    text-align: center;
+  }
+  .At-AddNavigation nav .At-TotalLtf {
+    float: none;
+    margin: 0 12px 0 0;
+    display: inline-block;
+  }
+  .At-AddNavigation nav .At-TotalLtf:last-child {
+    margin: 0;
+  }
+  .At-Header {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .At-AddNavigation nav .At-TotalLtf {
+    margin: 4px;
+    font-size: 12px;
+    line-height: 30px;
+    min-width: auto;
+    padding: 0 8px;
+    width: calc(50% - 8px);
+    min-width: auto;
+  }
+  .At-AddNavigation nav .At-TotalLtf:last-child {
+    margin: 4px;
+  }
+  .At-Assetpageholder {
+    padding: 160px 12px 0 12px;
+  }
+  .At-sidebarwrapper {
+    top: 144px;
+    height: calc(100vh - 144px);
+  }
+  .at-pagetitleblock {
+    display: block;
+  }
+  .at-pagetitleblock h2 {
+    width: 100%;
+    font-size: 24px;
+  }
+  .at-pagetitleblock .At-Input,
+  .at-pagetitleblock .At-SelectHolder {
+    width: calc(50% - 8px);
+    margin: 4px;
+    float: left;
+  }
+  .At-PageTitle h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*------------------------------------------------
+1024
+------------------------------------------------*/
+@media screen and (max-width: 1023px) {
+  .At-SwiperWrap .At-BtnSwiperNext {
+    right: 10px;
+  }
+  .At-SwiperWrap .At-BtnSwiperPrev {
+    left: 10px;
+  }
+}
+
+/*------------------------------------------------
+992
+------------------------------------------------*/
+@media (min-width: 992px) {
+  .At-NavLoginUlMobile {
+    display: none;
+  }
+  .At-ProfileTopRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .At-ProfileTopLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .At-FeedTabWrapper {
+    width: 52.5rem;
+  }
+  .At-ChatContainer .At-ChatList {
+    width: 25.125rem;
+  }
+}
+
+/*------------------------------------------------
+991
+------------------------------------------------*/
+@media (max-width: 991px) {
+  .At-Header .At-ChatUserWrapper,
+  .At-HeaderProfile {
+    margin-top: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .At-Header .At-ChatUserWrapper a,
+  .At-HeaderProfile a {
+    display: block !important;
+  }
+  .At-Header .At-ChatUserWrapper .At-FeatureText,
+  .At-HeaderProfile .At-FeatureText {
+    display: block !important;
+  }
+  .At-Header .At-ChatUserWrapper .At-ChatUserDropdown,
+  .At-HeaderProfile .At-ChatUserDropdown {
+    margin: auto;
+  }
+  .At-FooterCol {
+    margin-bottom: 3rem;
+  }
+  .At-NavbarCollapse {
+    margin-top: 1rem;
+  }
+  .navbar-nav a::after {
+    left: 0;
+    bottom: 1px;
+    height: 2px;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: var(--themeBlack) 0 0 0 0.1rem;
+            box-shadow: var(--themeBlack) 0 0 0 0.1rem;
+  }
+  .navbar-toggler {
+    padding: 0.2rem 0.45rem;
+  }
+  .At-NavCreateUl a {
+    padding: 0.7rem 0.5rem;
+  }
+  .At-NavCreateUl {
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .At-NavCreateUlConnect li {
+    width: 40%;
+  }
+  .At-NavLoginUl {
+    margin: 0 15px 0 auto;
+  }
+  .At-NavLoginUlDesktop {
+    display: none;
+  }
+  .At-TabBtnWrapper .ant-tabs-nav {
+    width: 100%;
+    margin: 0 auto 33px;
+    padding: 55px 15px 0;
+  }
+  .At-ProfileTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .At-ProfileTopRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 10px;
+  }
+  .At-ProfileTopLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .At-ProfileTopLeft .m-l80 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .At-ProfileBottom {
+    margin-top: 2rem;
+  }
+  .At-ProfieFields > .At-BtnSmall {
+    margin-bottom: 4px;
+  }
+  .At-SectionDarkTheme {
+    bottom: 15px;
+    right: 10px;
+  }
+  .At-ChatMessageContainer {
+    width: 100% !important;
+  }
+  .At-ChatList-none {
+    display: none;
+  }
+  .At-ChatSideBarIcon {
+    display: block;
+  }
+  .At-Sidebar {
+    position: relative;
+    top: inherit;
+  }
+  .At-DaoBox h1 {
+    font-size: 2.3rem;
+  }
+  .At-DaoBox h2 {
+    font-size: 1.5rem;
+  }
+  .At-DaoBox h3 {
+    font-size: 1.2rem;
+  }
+  .At-TitleFormRow .At-BtnMedium {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .At-PageTitle h1 {
+    font-size: 2.8rem;
+  }
+  .At-PageTitle h2 {
+    font-size: 1.2rem;
+  }
+  .At-PageTitle .At-DetailJoinButton {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 0.3rem 0.1rem !important;
+  }
+  .At-PageTitle .At-DetailJoinButtonGradient {
+    padding: 0.45rem 0.1rem !important;
+  }
+}
+
+/*------------------------------------------------
+768
+------------------------------------------------*/
+@media (min-width: 768px) {
+  .At-SingleFeed .At-DiscoverBoxMiddle .At-Figure {
+    height: 29.375rem;
+  }
+}
+
+/*------------------------------------------------
+767
+------------------------------------------------*/
+@media (max-width: 767px) {
+  .At-SelectCollection > h1 {
+    font-size: 28px !important;
+  }
+  .create-collectible .At-SelectCollection > h4 {
+    font-size: 16px !important;
+  }
+  .m-l30 {
+    margin-left: 5px !important;
+  }
+  .At-SwiperWrapDiscover .At-BtnSwiper {
+    top: 30%;
+  }
+  .At-DiscoverBoxMiddle .At-Figure {
+    height: 30rem;
+  }
+  .At-LoginLeft {
+    width: 50%;
+  }
+  .At-LoginRight {
+    width: 50%;
+  }
+  .At-BtnSmW100 {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .At-DetailJoinButton {
+    width: 8.3rem !important;
+    padding: 0.6rem 0.1rem !important;
+  }
+  .At-DetailJoinButtonGradient {
+    padding: 0.7rem 0.1rem !important;
+  }
+}
+
+/*------------------------------------------------
+630
+------------------------------------------------*/
+/*------------------------------------------------
+554
+------------------------------------------------*/
+@media (max-width: 576px) {
+  .At-EditProfileTop .m-l51 {
+    margin-left: 0px !important;
+    margin-top: 10px;
+  }
+  .At-Copyright {
+    text-align: center;
+  }
+  .At-Copyright .At-CopyrightUl {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+  .At-SwiperWrap .At-BtnSwiper {
+    display: none;
+  }
+  .At-LoginLeft {
+    width: 100%;
+  }
+  .At-LoginRight {
+    display: none;
+  }
+  .At-LoginLeftInner {
+    max-width: 100%;
+    padding: 6rem 0 3rem 15px;
+  }
+  .At-SectionTitleTabs .At-SectionTitle {
+    position: relative;
+    top: inherit;
+  }
+  .At-TabBtnWrap .ant-tabs-nav {
+    margin: 1.5rem auto 33px;
+    width: 100%;
+  }
+  .At-TitleBlueFont40 {
+    font-size: 1.75rem;
+  }
+  .At-RadioImg input[type="radio"] + label {
+    width: 5.25rem;
+    height: 4.2rem;
+  }
+  .At-RadioImg input[type="radio"] + label img {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .At-PostBtnsWrapper .At-BtnMedium {
+    margin: 1.5rem auto 0 !important;
+  }
+}
+
+/*------------------------------------------------
+500
+------------------------------------------------*/
+/*------------------------------------------------
+479
+------------------------------------------------*/
+@media (max-width: 479px) {
+  .At-SectionFeature .col-6 {
+    width: 100%;
+  }
+  .At-NavLoginUl a {
+    min-width: auto;
+    background: none !important;
+  }
+  .At-NavLoginUl li:last-child a {
+    color: var(--blue);
+  }
+  .At-NavLoginUl li:first-child a {
+    color: var(--themeBlack) !important;
+  }
+  .At-NavLoginUl {
+    margin: 0 8px 0 auto;
+  }
+  .At-SelectCollection > h1 {
+    font-size: 20px !important;
+  }
+  .create-collectible .At-SelectCollection > h4 {
+    font-size: 14px !important;
+  }
+  .At-CreateCollectibleParent {
+    padding: 0px 4px;
+  }
+  .At-CreateCollectibleParent .col-6 {
+    padding: 0px 4px !important;
+  }
+  .At-CreateCollectibleParent {
+    height: 180px;
+  }
+  .create-collectible .At-SelectCollection > h1 {
+    padding: 3rem 0;
+  }
+  .create-collectible .ant-tabs-tab {
+    height: 7rem;
+  }
+  .create-collectible .ant-tabs-tab i {
+    font-size: 1.8rem !important;
+  }
+  .create-collectible .ant-tabs-tab h5 {
+    font-size: 0.9rem !important;
+  }
+  .At-ChooseCollectionItem {
+    height: 7rem;
+  }
+  .At-ChooseCollectionItem i {
+    font-size: 1.8rem !important;
+  }
+  .At-ChooseCollectionItem .icon-artify {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 1rem !important;
+    padding-top: 8px;
+  }
+  .At-ChooseCollectionItem p {
+    font-size: 12px;
+  }
+  .At-BtnDarkMode {
+    padding: 1rem;
+  }
+  .At-FromGroupWithImg .At-FormControlText {
+    padding: 2rem 0 2rem 5.5rem;
+    font-size: 1.3rem;
+  }
+  .At-FromGroupWithImg .At-FormControl {
+    font-size: 1.3rem !important;
+    padding-left: 5.5rem;
+  }
+  .At-ContainerStakPool .At-Col20 {
+    width: 100%;
+  }
+  .At-AddPost .At-PostBtns li {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .At-DetailJoinButton {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 0.3rem 0.1rem !important;
+  }
+  .At-DetailJoinButtonGradient {
+    padding: 0.45rem 0.1rem !important;
+  }
+}
+
+/*------------------------------------------------
+375
+------------------------------------------------*/
+@media (max-width: 375px) {
+  .text-nowrap {
+    white-space: nowrap;
+    padding: 1.1rem 3rem !important;
+  }
+  .At-ProfileTopRight .At-ProfileIcons {
+    margin-left: 0.5rem;
+    border: none;
+  }
+  .At-ProfileIdWrapper {
+    width: 100% !important;
+  }
+  .At-ProfileIdWrapper .At-ProfileId {
+    width: 98% !important;
+  }
+  .At-ProfileIdWrapper .At-ProfileId p {
+    font-size: 12px !important;
+  }
+}
+
+/*------------------------------------------------
+320
+
+------------------------------------------------*/
+/*# sourceMappingURL=app.css.map */

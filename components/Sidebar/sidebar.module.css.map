@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAA;EAAC,KAAK,EAAE,KAAK;CAAG",
+    "sources": [
+        "sidebar.module.scss"
+    ],
+    "names": [],
+    "file": "sidebar.module.css"
+}

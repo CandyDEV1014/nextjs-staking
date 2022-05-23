@@ -1,0 +1,816 @@
+/*========================================================
+================== RESPONSIVE QUERIES===============*/
+/*------------------------------------------------
+1920
+------------------------------------------------*/
+@media (max-width: 1920px) {
+  .At-SwiperWrapHomepage .swiper-container {
+    overflow: visible;
+  }
+  .At-BannerTop {
+    overflow-x: hidden;
+  }
+}
+
+/*------------------------------------------------
+1760
+------------------------------------------------*/
+@media (min-width: 1760px) {
+  .At-Container {
+    max-width: 1710px;
+  }
+}
+
+/*------------------------------------------------
+1759
+------------------------------------------------*/
+@media screen and (max-width: 1760px) {
+  html {
+    font-size: 85%;
+  }
+  h6 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .At-Header .navbar .At-FormControl {
+    width: 14.1rem;
+  }
+  .At-FormGroupIcon i {
+    right: 0.2rem;
+  }
+  .At-Card .At-BtnSmall {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
+  .At-SectionFooter .At-FooterInput .At-Btn {
+    right: 0.4rem;
+    top: 0.32rem;
+  }
+  .At-TabBtnWrap .ant-tabs-nav {
+    margin: 0.1rem auto 33px;
+  }
+  .At-ChatInputIcons i {
+    margin-bottom: 12px !important;
+  }
+}
+
+/*------------------------------------------------
+1601
+------------------------------------------------*/
+@media (max-width: 1601px) {
+  .rt-tableholder {
+    overflow: auto !important;
+    width: 100% !important;
+    float: left !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: none !important;
+            flex: none !important;
+  }
+  .rt-tableholder table {
+    width: 100% !important;
+    min-width: 1199px !important;
+    overflow: auto !important;
+  }
+}
+
+/*------------------------------------------------
+1500
+------------------------------------------------*/
+@media screen and (max-width: 1500px) {
+  .At-SwiperWrap .At-BtnSwiperNext {
+    right: -1rem;
+  }
+  .At-SwiperWrap .At-BtnSwiperPrev {
+    left: -1rem;
+  }
+}
+
+/*------------------------------------------------
+1600
+------------------------------------------------*/
+@media screen and (min-width: 1401px) {
+  .At-Col20 {
+    width: 20%;
+  }
+  .At-ProfileTop {
+    max-width: 90rem;
+  }
+  .At-Container1275 {
+    max-width: 1275px;
+  }
+}
+
+/*------------------------------------------------
+1400
+------------------------------------------------*/
+@media screen and (max-width: 1400px) {
+  .create-collectible .At-SelectCollection > h1 {
+    padding: 6rem 0;
+  }
+  .At-xxl-DisplayNone {
+    display: none;
+  }
+  .At-NavCreateUl a {
+    padding: 1rem 0.5rem;
+    min-width: 6rem;
+    font-size: 12px;
+  }
+  .navbar-nav a {
+    font-size: 12px;
+  }
+  .At-Header .navbar .At-FormControl {
+    padding: 0.9rem 1rem;
+  }
+  .At-FormGroupIcon i {
+    top: 0.4rem;
+  }
+  .At-LoginLeftInner {
+    padding: 6rem 0 6rem 2rem;
+  }
+  .At-LoginLogo {
+    padding-left: 2rem;
+  }
+  .At-HeaderProfile .At-ChatUser {
+    width: 12.25rem;
+  }
+  .At-ChatItem .At-FitFull-50 {
+    height: 2.125rem;
+    width: 2.125rem;
+    margin-right: 0.6rem;
+  }
+  .At-HeaderProfile .At-HeaderNotification {
+    padding: 0px 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .At-CenterParent {
+    width: 940px;
+    padding: 0 3rem;
+  }
+  .At-CreateCollectibleParent {
+    height: 480px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .At-Aboutcontent .At-Aboutrangebarareahlder .At-Aboutrangebararea {
+    width: 100%;
+  }
+}
+
+/*------------------------------------------------
+1200
+------------------------------------------------*/
+@media (min-width: 1200px) {
+  .At-TextOverly {
+    width: 34.375rem;
+    line-height: 24px;
+  }
+  .At-Container-1130 {
+    max-width: 1130px;
+  }
+  .At-SwiperWrapDiscover {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+  .At-Container1020 {
+    max-width: 1020px;
+  }
+}
+
+/*------------------------------------------------
+1199
+------------------------------------------------*/
+@media (max-width: 1199px) {
+  .At-Card .At-CardBody {
+    padding: 0.95rem;
+  }
+  .At-Header .At-ChatUserWrapper,
+  .At-HeaderProfile {
+    width: 3rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .At-Header .At-ChatUserWrapper a,
+  .At-HeaderProfile a {
+    display: none;
+  }
+  .At-Header .At-ChatUserWrapper .At-FeatureText,
+  .At-HeaderProfile .At-FeatureText {
+    display: none;
+  }
+  .At-Header .At-ChatUserWrapper .At-HeaderNotification,
+  .At-HeaderProfile .At-HeaderNotification {
+    display: none;
+  }
+  .At-Header .At-ChatUserWrapper .At-ChatUserDropdown,
+  .At-HeaderProfile .At-ChatUserDropdown {
+    margin: auto;
+  }
+  .At-Header .At-Logo {
+    max-width: 8rem;
+    padding: 9px 0;
+  }
+  .At-sidebarwrapper {
+    top: 72px;
+    width: 236px;
+    height: calc(100vh - 72px);
+  }
+  .At-Assetpageholder {
+    padding: 110px 34px 0 260px;
+  }
+  .At-sidebarwrapper .AtSidebarSocial li {
+    margin-left: 0.5rem;
+  }
+  .At-sidebarwrapper .AtSidebarSocial li:first-child {
+    margin-left: 0;
+  }
+  .m-l80 {
+    margin-left: 3.125rem;
+  }
+  .At-LoginLogo {
+    padding-left: 15px;
+  }
+  .At-LoginLeftInner {
+    padding: 6rem 0 6rem 15px;
+  }
+  .AtPollRight .At-BtnLike {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+  .AtPollRight .At-BtnLike i {
+    font-size: 1.25rem;
+  }
+  .At-px-15 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .At-g-15,
+  .At-gx-15 {
+    --bs-gutter-x: 10px;
+  }
+  .At-g-15,
+  .At-gy-15 {
+    --bs-gutter-y: 10px;
+  }
+  .At-AddNavigation nav .At-TotalLtf,
+  .At-AddNavigation nav .At-btnconnectmetamask,
+  .At-AddNavigation nav .At-Profiledropdown button {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .At-AddNavigation nav .At-Profiledropdown button figure {
+    width: 30px;
+    height: 30px;
+  }
+  .At-AddNavigation nav .At-btnconnectmetamask figure {
+    width: 30px;
+  }
+}
+
+/*------------------------------------------------
+1059
+------------------------------------------------*/
+@media screen and (max-width: 991px) {
+  .rt-btnsidebartoggle {
+    display: block;
+  }
+  .At-sidebarwrapper {
+    top: 106px;
+    left: -100%;
+    z-index: 1;
+    height: calc(100vh - 106px);
+  }
+  .At-sidebarwrapper.rt-showsidebar {
+    left: 0;
+  }
+  .At-Assetpageholder {
+    padding: 120px 20px 0 20px;
+  }
+  .At-Header .At-Logo {
+    float: none;
+    padding: 0;
+    width: 108px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+  }
+  .At-AddNavigation {
+    width: 100%;
+  }
+  .At-AddNavigation nav {
+    text-align: center;
+  }
+  .At-AddNavigation nav .At-TotalLtf {
+    float: none;
+    margin: 0 12px 0 0;
+    display: inline-block;
+  }
+  .At-AddNavigation nav .At-TotalLtf:last-child {
+    margin: 0;
+  }
+  .At-Header {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .At-AddNavigation nav .At-TotalLtf {
+    margin: 4px;
+    font-size: 12px;
+    line-height: 30px;
+    min-width: auto;
+    padding: 0 8px;
+    width: calc(50% - 8px);
+    min-width: auto;
+  }
+  .At-AddNavigation nav .At-TotalLtf:last-child {
+    margin: 4px;
+  }
+  .At-Assetpageholder {
+    padding: 160px 12px 0 12px;
+  }
+  .At-sidebarwrapper {
+    top: 144px;
+    height: calc(100vh - 144px);
+  }
+  .at-pagetitleblock {
+    display: block;
+  }
+  .at-pagetitleblock h2 {
+    width: 100%;
+    font-size: 24px;
+  }
+  .at-pagetitleblock .At-Input,
+  .at-pagetitleblock .At-SelectHolder {
+    width: calc(50% - 8px);
+    margin: 4px;
+    float: left;
+  }
+  .At-PageTitle h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*------------------------------------------------
+1024
+------------------------------------------------*/
+@media screen and (max-width: 1023px) {
+  .At-SwiperWrap .At-BtnSwiperNext {
+    right: 10px;
+  }
+  .At-SwiperWrap .At-BtnSwiperPrev {
+    left: 10px;
+  }
+}
+
+/*------------------------------------------------
+992
+------------------------------------------------*/
+@media (min-width: 992px) {
+  .At-NavLoginUlMobile {
+    display: none;
+  }
+  .At-ProfileTopRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .At-ProfileTopLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .At-FeedTabWrapper {
+    width: 52.5rem;
+  }
+  .At-ChatContainer .At-ChatList {
+    width: 25.125rem;
+  }
+}
+
+/*------------------------------------------------
+991
+------------------------------------------------*/
+@media (max-width: 991px) {
+  .At-Header .At-ChatUserWrapper,
+  .At-HeaderProfile {
+    margin-top: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .At-Header .At-ChatUserWrapper a,
+  .At-HeaderProfile a {
+    display: block !important;
+  }
+  .At-Header .At-ChatUserWrapper .At-FeatureText,
+  .At-HeaderProfile .At-FeatureText {
+    display: block !important;
+  }
+  .At-Header .At-ChatUserWrapper .At-ChatUserDropdown,
+  .At-HeaderProfile .At-ChatUserDropdown {
+    margin: auto;
+  }
+  .At-FooterCol {
+    margin-bottom: 3rem;
+  }
+  .At-NavbarCollapse {
+    margin-top: 1rem;
+  }
+  .navbar-nav a::after {
+    left: 0;
+    bottom: 1px;
+    height: 2px;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: var(--themeBlack) 0 0 0 0.1rem;
+            box-shadow: var(--themeBlack) 0 0 0 0.1rem;
+  }
+  .navbar-toggler {
+    padding: 0.2rem 0.45rem;
+  }
+  .At-NavCreateUl a {
+    padding: 0.7rem 0.5rem;
+  }
+  .At-NavCreateUl {
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .At-NavCreateUlConnect li {
+    width: 40%;
+  }
+  .At-NavLoginUl {
+    margin: 0 15px 0 auto;
+  }
+  .At-NavLoginUlDesktop {
+    display: none;
+  }
+  .At-TabBtnWrapper .ant-tabs-nav {
+    width: 100%;
+    margin: 0 auto 33px;
+    padding: 55px 15px 0;
+  }
+  .At-ProfileTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .At-ProfileTopRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 10px;
+  }
+  .At-ProfileTopLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .At-ProfileTopLeft .m-l80 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .At-ProfileBottom {
+    margin-top: 2rem;
+  }
+  .At-ProfieFields > .At-BtnSmall {
+    margin-bottom: 4px;
+  }
+  .At-SectionDarkTheme {
+    bottom: 15px;
+    right: 10px;
+  }
+  .At-ChatMessageContainer {
+    width: 100% !important;
+  }
+  .At-ChatList-none {
+    display: none;
+  }
+  .At-ChatSideBarIcon {
+    display: block;
+  }
+  .At-Sidebar {
+    position: relative;
+    top: inherit;
+  }
+  .At-DaoBox h1 {
+    font-size: 2.3rem;
+  }
+  .At-DaoBox h2 {
+    font-size: 1.5rem;
+  }
+  .At-DaoBox h3 {
+    font-size: 1.2rem;
+  }
+  .At-TitleFormRow .At-BtnMedium {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .At-PageTitle h1 {
+    font-size: 2.8rem;
+  }
+  .At-PageTitle h2 {
+    font-size: 1.2rem;
+  }
+  .At-PageTitle .At-DetailJoinButton {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 0.3rem 0.1rem !important;
+  }
+  .At-PageTitle .At-DetailJoinButtonGradient {
+    padding: 0.45rem 0.1rem !important;
+  }
+}
+
+/*------------------------------------------------
+768
+------------------------------------------------*/
+@media (min-width: 768px) {
+  .At-SingleFeed .At-DiscoverBoxMiddle .At-Figure {
+    height: 29.375rem;
+  }
+}
+
+/*------------------------------------------------
+767
+------------------------------------------------*/
+@media (max-width: 767px) {
+  .At-SelectCollection > h1 {
+    font-size: 28px !important;
+  }
+  .create-collectible .At-SelectCollection > h4 {
+    font-size: 16px !important;
+  }
+  .m-l30 {
+    margin-left: 5px !important;
+  }
+  .At-SwiperWrapDiscover .At-BtnSwiper {
+    top: 30%;
+  }
+  .At-DiscoverBoxMiddle .At-Figure {
+    height: 30rem;
+  }
+  .At-LoginLeft {
+    width: 50%;
+  }
+  .At-LoginRight {
+    width: 50%;
+  }
+  .At-BtnSmW100 {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .At-DetailJoinButton {
+    width: 8.3rem !important;
+    padding: 0.6rem 0.1rem !important;
+  }
+  .At-DetailJoinButtonGradient {
+    padding: 0.7rem 0.1rem !important;
+  }
+  .At-Aboutcardarea {
+    width: 100%;
+  }
+  .At-Aboutcontent {
+    width: 100%;
+    margin: 30px 0 0 !important;
+  }
+}
+
+/*------------------------------------------------
+630
+------------------------------------------------*/
+/*------------------------------------------------
+554
+------------------------------------------------*/
+@media (max-width: 576px) {
+  .At-EditProfileTop .m-l51 {
+    margin-left: 0px !important;
+    margin-top: 10px;
+  }
+  .At-Copyright {
+    text-align: center;
+  }
+  .At-Copyright .At-CopyrightUl {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+  .At-SwiperWrap .At-BtnSwiper {
+    display: none;
+  }
+  .At-LoginLeft {
+    width: 100%;
+  }
+  .At-LoginRight {
+    display: none;
+  }
+  .At-LoginLeftInner {
+    max-width: 100%;
+    padding: 6rem 0 3rem 15px;
+  }
+  .At-SectionTitleTabs .At-SectionTitle {
+    position: relative;
+    top: inherit;
+  }
+  .At-TabBtnWrap .ant-tabs-nav {
+    margin: 1.5rem auto 33px;
+    width: 100%;
+  }
+  .At-TitleBlueFont40 {
+    font-size: 1.75rem;
+  }
+  .At-RadioImg input[type="radio"] + label {
+    width: 5.25rem;
+    height: 4.2rem;
+  }
+  .At-RadioImg input[type="radio"] + label img {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .At-PostBtnsWrapper .At-BtnMedium {
+    margin: 1.5rem auto 0 !important;
+  }
+}
+
+/*------------------------------------------------
+500
+------------------------------------------------*/
+/*------------------------------------------------
+479
+------------------------------------------------*/
+@media (max-width: 479px) {
+  .At-SectionFeature .col-6 {
+    width: 100%;
+  }
+  .At-NavLoginUl a {
+    min-width: auto;
+    background: none !important;
+  }
+  .At-NavLoginUl li:last-child a {
+    color: var(--blue);
+  }
+  .At-NavLoginUl li:first-child a {
+    color: var(--themeBlack) !important;
+  }
+  .At-NavLoginUl {
+    margin: 0 8px 0 auto;
+  }
+  .At-SelectCollection > h1 {
+    font-size: 20px !important;
+  }
+  .create-collectible .At-SelectCollection > h4 {
+    font-size: 14px !important;
+  }
+  .At-CreateCollectibleParent {
+    padding: 0px 4px;
+  }
+  .At-CreateCollectibleParent .col-6 {
+    padding: 0px 4px !important;
+  }
+  .At-CreateCollectibleParent {
+    height: 180px;
+  }
+  .create-collectible .At-SelectCollection > h1 {
+    padding: 3rem 0;
+  }
+  .create-collectible .ant-tabs-tab {
+    height: 7rem;
+  }
+  .create-collectible .ant-tabs-tab i {
+    font-size: 1.8rem !important;
+  }
+  .create-collectible .ant-tabs-tab h5 {
+    font-size: 0.9rem !important;
+  }
+  .At-ChooseCollectionItem {
+    height: 7rem;
+  }
+  .At-ChooseCollectionItem i {
+    font-size: 1.8rem !important;
+  }
+  .At-ChooseCollectionItem .icon-artify {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 1rem !important;
+    padding-top: 8px;
+  }
+  .At-ChooseCollectionItem p {
+    font-size: 12px;
+  }
+  .At-BtnDarkMode {
+    padding: 1rem;
+  }
+  .At-FromGroupWithImg .At-FormControlText {
+    padding: 2rem 0 2rem 5.5rem;
+    font-size: 1.3rem;
+  }
+  .At-FromGroupWithImg .At-FormControl {
+    font-size: 1.3rem !important;
+    padding-left: 5.5rem;
+  }
+  .At-ContainerStakPool .At-Col20 {
+    width: 100%;
+  }
+  .At-AddPost .At-PostBtns li {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .At-DetailJoinButton {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 0.3rem 0.1rem !important;
+  }
+  .At-DetailJoinButtonGradient {
+    padding: 0.45rem 0.1rem !important;
+  }
+  .At-Card .At-cardnumberartea {
+    display: block;
+    position: relative;
+  }
+  .At-Card .At-cardnumberartea em {
+    float: left;
+    width: auto;
+  }
+  .At-Card .At-cardnumberartea .At-FCard {
+    width: 100%;
+    float: left;
+    display: block;
+    margin: 10px 0 0;
+  }
+  .At-Card .At-cardnumberartea span {
+    right: 0;
+    top: 5px;
+    width: auto;
+    position: absolute;
+  }
+}
+
+/*------------------------------------------------
+375
+------------------------------------------------*/
+@media (max-width: 375px) {
+  .text-nowrap {
+    white-space: nowrap;
+    padding: 1.1rem 3rem !important;
+  }
+  .At-ProfileTopRight .At-ProfileIcons {
+    margin-left: 0.5rem;
+    border: none;
+  }
+  .At-ProfileIdWrapper {
+    width: 100% !important;
+  }
+  .At-ProfileIdWrapper .At-ProfileId {
+    width: 98% !important;
+  }
+  .At-ProfileIdWrapper .At-ProfileId p {
+    font-size: 12px !important;
+  }
+}
+
+/*------------------------------------------------
+320
+
+------------------------------------------------*/
+/*# sourceMappingURL=responsive.css.map */

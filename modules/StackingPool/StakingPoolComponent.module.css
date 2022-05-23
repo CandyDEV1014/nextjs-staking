@@ -1,0 +1,75 @@
+.AtStakingCard {
+  background-color: #14152B;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #20213A;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AtStakingCard .AtBtnHolder {
+  margin-top: auto;
+  width: 100%;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.AtStakingCard h2 {
+  margin-bottom: 5px;
+  color: #2F93FF;
+}
+
+.AtStakingCard p {
+  color: #909295;
+}
+
+.AtCardTop {
+  padding: 1.4rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.AtCardBottom {
+  padding: 1.25rem 1.25rem 0;
+  border-top: 1px solid var(--borderColor);
+  width: 100%;
+}
+
+.AtFigure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.AtOrangeLabel {
+  background-color: var(--orange);
+  color: var(--white);
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0.9rem;
+  right: -2.2rem;
+  width: 8rem;
+  height: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=StakingPoolComponent.module.css.map */

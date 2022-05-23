@@ -1,0 +1,78 @@
+@mixin productsans-regular() {
+    font-family: "ProductSans", sans-serif;
+    font-weight: 400;
+}
+
+@mixin productsans-medium() {
+    font-family: "ProductSansMedium", sans-serif;
+    font-weight: 500;
+}
+
+@mixin productsans-bold() {
+    font-family: "ProductSansBold", sans-serif;
+}
+
+@mixin background-color($color, $opacity: 0.949) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin placeholders($color) {
+    &::-webkit-input-placeholder {
+        color: $color !important;
+    }
+
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $color !important;
+    }
+
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $color !important;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color !important;
+    }
+}
+
+@mixin shadow($color: #ccc) {
+    -webkit-box-shadow: 2px 2px 5px 2px $color; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 2px 2px 5px 2px $color; /* Firefox 3.5 - 3.6 */
+    box-shadow: 2px 2px 5px 2px $color; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@mixin boxshadow-default() {
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05); /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@mixin bd-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin transition-basic() {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin transition($set...) {
+    -webkit-transition: $set;
+    -moz-transition: $set;
+    -o-transition: $set;
+    transition: $set;
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
